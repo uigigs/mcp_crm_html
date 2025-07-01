@@ -1,0 +1,251 @@
+.dashboard-note-card{
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 30px;
+    min-height: 100%;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        border-radius: 15px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 82.29%, #FFF 100%);
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+        height: 33%;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+    }
+    .dashboard-card-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0px 30px;
+        .card-title{
+            color: #111;
+            font-family: Outfit;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 200%;
+        }
+    }
+}
+
+.note-card-content{
+    padding: 20px 30px 0px 30px;
+    max-height: 294px;
+    overflow-y: scroll;
+}
+.note-body{
+    border-radius: 10px;
+    padding: 15px 20px 20px 20px;
+    margin-bottom: 10px;
+    position: relative;
+    &::after{
+        position: absolute;
+        z-index: 1;
+        bottom: -10px;
+        right: 0px;
+    }
+    &::before{
+        content: url(../images/crm/card-cone-white.svg);
+        position: absolute;
+        z-index: 1;
+        bottom: -10px;
+        right: 0px;
+    }
+    &.brown{
+        background: #FFC972;
+        &::after{
+            content: url(../images/crm/card-cone-brown.svg);
+        }
+    }
+    &.pink{
+        background: #FF9B73;
+        &::after{
+            content: url(../images/crm/card-cone-pink.svg);
+        }
+    }
+    &.oliv{
+        background: #E4EE90;
+        &::after{
+            content: url(../images/crm/card-cone-off-white.svg);
+        }
+    }
+    .note-date{
+        color: #111;
+        font-family: Inter;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 200%;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    p{
+        color: #111;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 169.231%;
+        margin-bottom: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+
+/*-- note-drawer --*/
+.note-drawer{
+    .offcanvas{
+        width: 500px;
+    }
+    .offcanvas-header{
+        padding: 40px 40px 35px 40px;
+        .note-close-btn{
+            position: absolute;
+            left: -40px;
+            top: 55px;
+            --bs-btn-close-bg: none;
+            opacity: 1 !important;
+            padding: 0px;
+            height: 24px;
+            width: 24px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+    .offcanvas-title{
+        color: #000;
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 0px;
+    }
+
+    .offcanvas-body{
+        padding: 0px 40px 40px 40px;
+    }
+}
+
+
+.write-note-section{
+    ul{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        li{
+            button{
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.brown{
+                    background: #FFC972;
+                }
+                &.pink{
+                    background: #FF9B73;
+                }
+                &.violate{
+                    background: #B692FE;
+                }
+                &.till{
+                    background: #01D4FF;
+                }
+                &.offwhite{
+                    background: #E4EE91;
+                }
+                &.active{
+                    &::after{
+                        content: url(../images/icon/check.svg);
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.write-note-card{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0px;
+    position: relative;
+    &::after{
+        position: absolute;
+        z-index: 1;
+        bottom: -10px;
+        right: 0px;
+    }
+    &::before{
+        content: url(../images/crm/card-cone-white.svg);
+        position: absolute;
+        z-index: 1;
+        bottom: -10px;
+        right: 0px;
+    }
+    &.brown{
+        background: #FFC972;
+        &::after{
+            content: url(../images/crm/card-cone-brown.svg);
+        }
+    }
+    &.pink{
+        background: #FF9B73;
+        &::after{
+            content: url(../images/crm/card-cone-pink.svg);
+        }
+    }
+    &.violate{
+        background: #B692FE;
+        &::after{
+            content: url(../images/crm/card-cone-violet.svg);
+        }
+    }
+    &.till{
+        background: #01D4FF;
+        &::after{
+            content: url(../images/crm/card-cone-till.svg);
+        }
+    }
+    &.offwhite{
+        background: #E4EE91;
+        &::after{
+            content: url(../images/crm/card-cone-off-white.svg);
+        }
+    }
+    textarea{
+        resize: none;
+        color: #111;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 157%;
+        height: 300px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        background: transparent;
+        &::placeholder{
+            color: #111111;
+        }
+    }
+}

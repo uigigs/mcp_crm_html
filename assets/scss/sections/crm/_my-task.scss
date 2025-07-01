@@ -1,0 +1,183 @@
+.my-tasks-card {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.my-tasks-card-header {
+    padding: 34px 30px 15px 30px;
+
+    h4 {
+        color: #111;
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+        margin: 0px !important;
+    }
+}
+
+.task-table {
+    overflow-x: scroll;
+
+    table {
+        min-width: max-content;
+        width: 100%;
+
+        tbody {
+            tr {
+                &:nth-last-child(1) {
+                    border: none;
+                }
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+            th {
+                color: #444;
+                font-family: Inter;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 24px;
+                text-transform: uppercase;
+                padding: 8px 5px;
+
+                &:nth-child(1) {
+                    padding: 8px 30px;
+                }
+
+                &:nth-last-child(1) {
+                    text-align: right;
+                    padding: 8px 30px;
+                }
+
+                &:nth-last-child(2) {
+                    text-align: right;
+                }
+
+                &:nth-last-child(3) {
+                    text-align: right;
+                }
+            }
+
+            td {
+                color: #444;
+                font-family: Inter;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 24px;
+
+                &:nth-child(1) {
+                    padding: 8px 30px;
+                }
+
+                padding: 8px 5px;
+
+                &:nth-last-child(1) {
+                    text-align: right;
+                    padding: 8px 30px;
+                }
+
+                &:nth-last-child(2) {
+                    text-align: right;
+                }
+
+                &:nth-last-child(3) {
+                    text-align: right;
+                }
+
+                span {
+                    margin-right: 10px;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                button {
+                    border-radius: 5px;
+                    padding: 0px 10px;
+                    margin-right: 10px;
+
+                    &.setup {
+                        background: #FFC972;
+                        color: #111;
+                    }
+
+                    &.design {
+                        background: #E4EE90;
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.task-card-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 15px;
+
+    .all-task-data {
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboard-calender-card-inner {
+        flex-wrap: wrap;
+        gap: 30px;
+        .dashboard-calender {
+            &-left {
+                width: 100%;
+            }
+            &-center {
+                width: 100%;
+            }
+            &-right {
+                width: 100%;
+            }
+        }
+    }
+    .income-cxpenses-graph {
+        .indecator-list{
+            top: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .income-cxpenses-graph {
+        overflow-x: scroll;
+
+        .value-list {
+            min-width: 600px;
+        }
+
+        .month-list {
+            justify-content: space-between;
+            min-width: 600px;
+            width: 100%;
+        }
+    }
+    .note-drawer {
+        .offcanvas{
+            max-width: 90%;
+        }
+        .offcanvas-header{
+            padding: 20px;
+        }
+        .offcanvas-body{
+            padding: 0px 20px 20px 20px;
+        }
+    }
+}

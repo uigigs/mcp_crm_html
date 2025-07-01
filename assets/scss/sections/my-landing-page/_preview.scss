@@ -1,0 +1,210 @@
+.template-preview-section{
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
+    padding-top: 50px;
+
+    .editor-card {
+        &::after{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+    }
+
+    .wp-component{
+        border: none !important;
+        &:hover{
+            border: none !important;
+        }
+    }
+}
+
+.page-back-btn{
+    color: #444;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    svg{
+        font-size: 22px;
+    }
+}
+
+.preview-tab-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+    .page-back-btn{
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    .tablist{
+        margin: auto;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 38px;
+        li{
+            a{
+                background: transparent !important;
+                color: #444;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 24px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 11.25%;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 13px;
+                border-radius: 0;
+                width: 100px;
+                svg{
+                    color: #999999;
+                    font-size: 20px;
+                    min-width: 24px;
+                }
+            }
+            &.active{
+                a{
+                    color: #35B7F3;
+                    border-bottom: 2px solid #35B7F3;
+                    svg{
+                        color: #35B7F3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.desktop-preview{
+    .template-editor-center{
+        max-width: 1170px;
+        width: 100%;
+    }
+}
+
+
+.mobile-bg{
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #F0F0F0;
+    max-width: 430px;
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .mobile-screen-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        top: 7px;
+        width: 100%;
+        .bar{
+            border-radius: 3px;
+            background: #D9D9D9;
+            height: 6px;
+            width: 40px;
+        }
+        .dot{
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #D9D9D9;
+        }
+    }
+}
+
+.mobile-preview{
+    .wp-header-component{
+        flex-wrap: wrap;
+        position: relative;
+        padding-top: 50px;
+    }
+    .wp-header-component-center{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    .wp-header-component-left, .wp-header-component-right{
+        width: 100%;
+        justify-content: center;
+    }
+    .template-editor-center{
+        width: 100%;
+        .editor-card-section{
+            padding-right: 4px;
+        }
+        .editor-card{
+            padding: 15px 20px;
+        }
+    }
+
+    .template-row{
+        flex-wrap: wrap;
+        gap: 0px;
+        .template-col-50{
+            width: 100%;
+        }
+        .template-col-33{
+            width: 100%;
+        }
+    }
+    .wp-content-card {
+        .content-img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .component-title{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .component-pragraph{
+        text-align: center;
+        font-size: 13px;
+    }
+    .content-text {
+        p{
+            font-size: 13px;
+        }
+    }
+    .wp-slider-section {
+        .wp-slider-content {
+            .slider-text {
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .wp-component {
+        .space{
+            height: 20px;
+            &.h-10{
+                height: 0px;
+            }
+        }
+    }
+}

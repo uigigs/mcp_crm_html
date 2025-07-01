@@ -1,0 +1,166 @@
+.publish-content{
+    max-width: 570px;
+    width: 100%;
+    margin: auto;
+    padding-top: 54px;
+}
+.publish-card {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    padding: 50px;
+    max-width: 570px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .form-input {
+        font-family: Inter;
+        margin-bottom: 30px;
+
+        label {
+            color: #444;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background: #FFF;
+            height: 45px;
+            width: 100%;
+            color: #111;
+            font-size: 15px;
+            font-weight: 500;
+            width: 100%;
+            outline: none;
+            padding: 5px 15px;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background: #FFF;
+            height: 120px;
+            width: 100%;
+            color: #111;
+            font-size: 15px;
+            font-weight: 500;
+            width: 100%;
+            outline: none;
+            padding: 5px 15px;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+
+        ul {
+            li {
+                list-style: none;
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+                background: #FFF;
+                min-height: 45px;
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                label{
+                    color: #111;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px; 
+                }
+
+                [type="radio"]:checked,
+                [type="radio"]:not(:checked) {
+                    position: absolute;
+                    left: -9999px;
+                }
+
+                [type="radio"]:checked+label,
+                [type="radio"]:not(:checked)+label {
+                    position: relative;
+                    padding-left: 28px;
+                    cursor: pointer;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+
+                [type="radio"]:checked+label:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid rgba(53, 183, 243, 0.50);
+                    border-radius: 100%;
+                    background: #fff;
+                }
+                [type="radio"]:not(:checked)+label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid rgba(0, 0, 0, 0.15);
+                    border-radius: 100%;
+                    background: #fff;
+                }
+
+                [type="radio"]:checked+label:after,
+                [type="radio"]:not(:checked)+label:after {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background: #35B7F3;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                }
+
+                [type="radio"]:not(:checked)+label:after {
+                    opacity: 0;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                }
+
+                [type="radio"]:checked+label:after {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+
+                .domain-name{
+                    margin: 0px -15px;
+                    padding: 9px 14px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-top: 1px solid rgba(0, 0, 0, 0.12);
+                    margin-top: 8px;
+                    margin-bottom: -10px;
+                    color: #999;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

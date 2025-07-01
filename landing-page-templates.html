@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Templates</title>
+
+    <!-- favicon included here -->
+    <!-- <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon"> -->
+
+    <!-- apple touch icon included here -->
+    <!-- <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg"> -->
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- header section start -->
+  <header class="user-header-section">
+    <div class="header-left">
+      <div class="user-menu-button">
+        <button id="userMenuBtn" type="button" role="button" aria-label="Toggle sidebar menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo/logo.svg" alt="header logo" />
+      </a>
+    </div>
+    <div class="header-right">
+      <form action="/">
+        <!-- <label for="search-input1" class="m-0 visually-hidden">Search</label> -->
+        <button type="button" role="button">
+          <img src="./assets/images/icon/search.svg" alt="search" />
+        </button>
+        <input type="text" id="search-input1" placeholder="Search here..." />
+      </form>
+      <ul class="user-header-right-list">
+        <li>
+          <div class="language-dropdown dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="language dropdown menu">
+              <span class="iconify" data-icon="ph:globe"></span>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">עִברִית</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#">简体中文</a></li>
+              <li><a class="dropdown-item" href="#">Italiano</a></li>
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+            </ol>
+          </div>
+        </li>
+        <li class="notification">
+          <a href="#">
+            <img src="./assets/images/icon/notification.svg" alt="notification" />
+          </a>
+        </li>
+        <li>
+          <div class="avater-menu-dropdown dropdown">
+            <a class="dropdown-toggle dropdown-tigger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="user-menu-avater">
+                <img src="./assets/images/avaters/avater.png" alt="user avatar" />
+              </div>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+            </ol>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- header section End -->
+
+  <!-- side-menu start -->
+  <section class="side-menu active" id="sideMenu">
+    <div class="side-menu-inner">
+      <div class="side-menu-list">
+        <div class="mobile-menu-top">
+          <div class="notificationa-and-language">
+            <div class="language-dropdown dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span
+                  class="iconify" data-icon="ph:globe" aria-label="language dropdown menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">עִברִית</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                <li><a class="dropdown-item" href="#">简体中文</a></li>
+                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+              </ul>
+            </div>
+            <div class="notification">
+              <a href="#"><img src="./assets/images/icon/notification.svg" alt="icon" /></a>
+            </div>
+          </div>
+
+          <form action="/">
+            <!-- <label for="search-input2" class="m-0 visually-hidden">Search</label> -->
+            <button type="button" role="button">
+              <img src="./assets/images/icon/search.svg" alt="search" />
+            </button>
+            <input type="text" id="search-input2" placeholder="Search here..." />
+          </form>
+        </div>
+        <a href="#">
+          <img src="./assets/images/icon/home.svg" alt="Dashboard icon" />
+          <span>Dashboard</span>
+        </a>
+
+        <div class="panel-group" id="accordionMenuExample">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseOne"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/people.svg" alt="my account icon" />
+                  <span>My Account</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseTwo"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/domain.svg" alt="domain icon" />
+                  <span>Domain</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseThree"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketing.svg" alt="Marketing Tools icon" />
+                  <span>Marketing Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFour"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/network.svg" alt="Network Tools icon" />
+                  <span>Network Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFive"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketplace.svg" alt="Marketplace icon" />
+                  <span>Marketplace</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body pr-0 pt-2">
+                <div class="panel-group" id="accordionSubmenuMenuExample">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionSubmenuMenuExample"
+                          href="#menu-collapseSubmenuFive" aria-expanded="false" class="collapsed accordion-btn">
+                          Code
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="menu-collapseSubmenuFive" class="panel-collapse collapse" aria-expanded="false"
+                      style="height: 0px;">
+                      <div class="panel-body p-0">
+                        <ul>
+                          <li><a href="#">WP Plugins</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseSix"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/crm.svg" alt="CRM icon" />
+                  <span>CRM</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseSix" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <div class="submenu-list-content">
+                  <ul>
+                    <li>
+                      <a href="#" class="active">Dashboard</a>
+                      <a href="#">Customer</a>
+                      <a href="#">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <p>Maxstore Cloud Platforms <br />v0. 17. 1597-189</p>
+        <button class="side-menu-close-btn" id="sideMenuCloseBtn">
+          <img src="./assets/images/icon/dropdown-icon.svg" alt="sidebar close" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- side-menu End -->
+
+    <!-- user-body-section start -->
+    <section class="user-body-section active uig-pt-115">
+      <div class="user-body-container">
+        <div class="page-title-section">
+          <h2 class="page-title">Templates</h2>
+        </div>
+        <div class="user-tabs-body">
+          <ul class="nav nav-pills tablist" id="myTabs">
+            <li class="active"><a class="tab-btn" href="#selectTamplate" data-toggle="tab">Select Template</a></li>
+            <li><a class="tab-btn" href="#createNew" data-toggle="tab">Create New</a></li>
+          </ul>
+        
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="selectTamplate">
+              <div class="select-tamplate-tab-content">
+                <div class="select-tamplate-tab-section">
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-4">
+                      <div class="select-tamplate-tab-btns">
+                        <ul class="nav nav-pills tablist" id="selectTamplateTabs">
+                          <li><a class="tab-btn" href="#allTamplates" data-toggle="tab">All templates</a></li>
+                          <li class="active"><a class="tab-btn" href="#general" data-toggle="tab">General</a></li>
+                          <li><a class="tab-btn" href="#registration" data-toggle="tab">Sign-up and registration</a></li>
+                          <li><a class="tab-btn" href="#promotion" data-toggle="tab">Promotion</a></li>
+                          <li><a class="tab-btn" href="#downloads" data-toggle="tab">Downloads</a></li>
+                          <li><a class="tab-btn" href="#sales" data-toggle="tab">Sales</a></li>
+                          <li><a class="tab-btn" href="#aboutMe" data-toggle="tab">About me</a></li>
+                          <li><a class="tab-btn" href="#webinars" data-toggle="tab">Webinars</a></li>
+                          <li><a class="tab-btn" href="#thankyouPage" data-toggle="tab">Thank-you pages</a></li>
+                          <li><a class="tab-btn" href="#holidays" data-toggle="tab">Holidays</a></li>
+                        </ul>
+                        <button class="create-layoout-form-btn">Create From Layout</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-8">
+                      <div class="tab-content select-tamplate-tab-contents">
+                        <div class="tab-pane fade in" id="allTamplates">
+                          <div class="select-tamplate-all-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template1.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template2.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Finance</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template3.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Blog</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in active" id="general">
+                          <div class="select-tamplate-general-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template1.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template2.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Finance</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template3.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Blog</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Crowfunding</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template8.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Corporate</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template9.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Portfolio</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="registration">
+                          <div class="select-tamplate-reg-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template1.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template2.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Finance</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template3.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Blog</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="promotion">
+                          <div class="select-tamplate-promotion-content">
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">App Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">SaaS Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">SaaS Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">Crowfunding</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="downloads">
+                          <div class="select-tamplate-downloads-content">
+                            <div class="row">
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">App Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">SaaS Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">SaaS Landing</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">Crowfunding</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-xs-6">
+                              <div class="tamplate-card">
+                                <div class="tamplate-img">
+                                  <img src="./assets/images/landing-page-img/template8.png" alt="img">
+                                </div>
+                                <div class="tamplate-card-footer">
+                                  <a href="#">Corporate</a>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="sales">
+                          <div class="select-tamplate-sales-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="aboutMe">
+                          <div class="select-tamplate-aboutme-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Crowfunding</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template8.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Corporate</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template9.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Portfolio</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="webinars">
+                          <div class="select-tamplate-webinars-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Crowfunding</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template8.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Corporate</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template9.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Portfolio</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="thankyouPage">
+                          <div class="select-tamplate-thankyou-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Crowfunding</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade in" id="holidays">
+                          <div class="select-tamplate-holidays-content">
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template2.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Finance</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template3.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Blog</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template4.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">App Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template5.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template6.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">SaaS Landing</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template7.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Crowfunding</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-6">
+                                <div class="tamplate-card">
+                                  <div class="tamplate-img">
+                                    <img src="./assets/images/landing-page-img/template8.png" alt="img">
+                                  </div>
+                                  <div class="tamplate-card-footer">
+                                    <a href="#">Corporate</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="createNew">
+              <div class="create-new-tab-content">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="layout-card">
+                      <div class="layout-card-img">
+                        <img src="./assets/images/landing-page-img/layout1.png" alt="img">
+                        <div class="layout-overlay"><button data-toggle="modal" data-target="#layOutModal">Select Layout</button></div>
+                      </div>
+                      <div class="layout-card-footer">
+                        <a href="#">Layout One</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="layout-card">
+                      <div class="layout-card-img">
+                        <img src="./assets/images/landing-page-img/layout2.png" alt="img">
+                        <div class="layout-overlay"><button data-toggle="modal" data-target="#layOutModal">Select Layout</button></div>
+                      </div>
+                      <div class="layout-card-footer">
+                        <a href="#">Layout Two</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="layout-card">
+                      <div class="layout-card-img">
+                        <img src="./assets/images/landing-page-img/layout3.png" alt="img">
+                        <div class="layout-overlay"><button data-toggle="modal" data-target="#layOutModal">Select Layout</button></div>
+                      </div>
+                      <div class="layout-card-footer">
+                        <a href="#">Layout Three</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="layout-card">
+                      <div class="layout-card-img">
+                        <img src="./assets/images/landing-page-img/layout4.png" alt="img">
+                        <div class="layout-overlay"><button data-toggle="modal" data-target="#layOutModal">Select Layout</button></div>
+                      </div>
+                      <div class="layout-card-footer">
+                        <a href="#">Layout Four</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="layout-card">
+                      <div class="layout-card-img">
+                        <img src="./assets/images/landing-page-img/layout5.png" alt="img">
+                        <div class="layout-overlay"><button data-toggle="modal" data-target="#layOutModal">Select Layout</button></div>
+                      </div>
+                      <div class="layout-card-footer">
+                        <a href="#">Layout Five</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- user-body-section end -->
+
+    <!-- Layout Modal Modal -->
+    <div
+    class="modal fade layoutModal"
+    id="layOutModal"
+    tabindex="-1"
+    aria-labelledby="layOutModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog layout-modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body layout-modal-body">
+          <form action="./landing-pages-create-edit.html" class="layout-modal-header">
+            <input type="text" placeholder="Landing Page Name">
+            <button type="submit" class="start-btn">Let's Start</button>
+          </form>
+          <div class="selected-layout-img">
+            <img src="./assets/images/landing-page-img/layout-select.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.3.1 js -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+
+    <!-- custon js -->
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+      const toggleSwitches = document.querySelectorAll(".toggle-switch-input");
+      const labels = document.querySelectorAll(".toggle-switch-label");
+
+      toggleSwitches.forEach((toggleSwitch, index) => {
+        toggleSwitch.addEventListener("change", function () {
+          const label = labels[index];
+          label.textContent = this.checked ? "on" : "off";
+          label.classList.toggle("on", this.checked);
+        });
+      });
+    </script>
+
+    <script>
+      const copyContainers = document.querySelectorAll(".copy");
+
+      copyContainers.forEach((copyContainer) => {
+        const copyText =
+          copyContainer.previousElementSibling.textContent.trim();
+        const copyIcon = copyContainer.querySelector(".copy-icon");
+        const checkIcon = copyContainer.querySelector(".check-icon");
+        const copiedMessage = copyContainer.querySelector(".copied-message");
+
+        copyIcon.addEventListener("click", () => {
+          // Create a temporary textarea to copy the text
+          const tempTextArea = document.createElement("textarea");
+          tempTextArea.value = copyText;
+          document.body.appendChild(tempTextArea);
+          tempTextArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempTextArea);
+
+          // Hide copy icon and show check icon
+          copyIcon.style.display = "none";
+          checkIcon.style.display = "inline";
+
+          // Show "Copied" message for 5 seconds
+          copiedMessage.style.display = "inline";
+
+          setTimeout(() => {
+            // Show copy icon and hide check icon
+            copyIcon.style.display = "inline";
+            checkIcon.style.display = "none";
+
+            // Hide "Copied" message
+            copiedMessage.style.display = "none";
+          }, 5000);
+        });
+      });
+    </script>
+
+    <script>
+      const clickButton = document.querySelector(".confirm-payment-button");
+      const processingSection = document.querySelector(".processing");
+      const successSection = document.querySelector(".success-content");
+
+      clickButton.addEventListener("click", () => {
+        processingSection.style.display = "block";
+
+        setTimeout(() => {
+          processingSection.style.display = "none";
+          successSection.style.display = "block";
+        }, 5000);
+      });
+    </script>
+
+    <script>
+      // Get the select elements
+      const creditguardSelect = document.getElementById("creditguard-select");
+      const tranzilaSelect = document.getElementById("tranzila-select");
+
+      // Get the span elements
+      const creditguardBasic = document.getElementById("creditguard-basic");
+      const creditguardAdvance = document.getElementById("creditguard-advance");
+      const creditguardPro = document.getElementById("creditguard-pro");
+      const tranzilaBasic = document.getElementById("tranzila-basic");
+      const tranzilaAdvance = document.getElementById("tranzila-advance");
+      const tranzilaPro = document.getElementById("tranzila-pro");
+
+      // Add event listeners to the select elements
+      creditguardSelect.addEventListener("change", handleSelectChange);
+      tranzilaSelect.addEventListener("change", handleSelectChange);
+
+      // Function to handle select change event
+      function handleSelectChange(event) {
+        const select = event.target;
+        const selectedOption = select.value;
+
+        // Determine which spans to show/hide based on the selected option
+        switch (select.id) {
+          case "creditguard-select":
+            creditguardBasic.style.display =
+              selectedOption === "default" ? "inline" : "none";
+            creditguardAdvance.style.display =
+              selectedOption === "advance" ? "inline" : "none";
+            creditguardPro.style.display =
+              selectedOption === "pro" ? "inline" : "none";
+            break;
+          case "tranzila-select":
+            tranzilaBasic.style.display =
+              selectedOption === "default" ? "inline" : "none";
+            tranzilaAdvance.style.display =
+              selectedOption === "advance" ? "inline" : "none";
+            tranzilaPro.style.display =
+              selectedOption === "pro" ? "inline" : "none";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+
+    <script>
+      const showMoreButtons = document.querySelectorAll(".show-more-button");
+
+      showMoreButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const pluginCard = this.closest(".wp-plugins-card");
+          const pluginCardText = pluginCard.querySelector(".plugin-card-text");
+          pluginCardText.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

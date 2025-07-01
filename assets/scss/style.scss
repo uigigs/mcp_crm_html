@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: MCP
+Theme URL: #
+Author: uigigs
+Author URL: https://themeforest.net/user/uigigs/portfolio
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+01. Settings style
+02. Base style
+03. Component Style
+04. Header style
+05. Banner Style
+06. home1 Style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/ 
+@import './settings/variables';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import './helper/reset.all'; 
+@import './helper/helper.theme';
+@import './utilities/uig.spacing';
+
+/*--------------------------------
+03. Component Style
+--------------------------------*/
+
+/*--------------------------------
+04. Header style
+--------------------------------*/
+@import './sections/header/header';
+@import './sections/header/mobile-menu';
+
+/*--------------------------------
+05. body
+--------------------------------*/
+@import './sections/wp-plugin/wp-plugin';
+
+/*--------------------------------
+10. Footer Section
+--------------------------------*/
+@import './sections/footer/footer';
+
+/*---------------------------------
+user-header
+---------------------------------*/
+@import './sections/header/user-header';
+
+/*---------------------------------
+user-body
+---------------------------------*/
+@import './sections/body/user-body';
+@import './sections/body/side-menu';
+@import './sections/body/my-plugin';
+@import './sections/body/modals';
+
+/*---------------------------------
+crm style
+---------------------------------*/
+@import './sections/crm/crm';
+@import './sections/crm/business-detail';
+@import './sections/crm/dashboard';
+@import './sections/crm/dashboard-note';
+@import './sections/crm/dashboard-calender-card';
+@import './sections/crm/customer';
+@import './sections/crm/clint-detail';
+@import './sections/crm/customer-drawer';
+@import './sections/crm/my-task';
+@import './sections/crm/setting';
+@import './sections/crm/custom-field';
+@import './sections/my-landing-page/my-landing';
+@import './sections/my-landing-page/empty-landing-page';
+@import './sections/my-landing-page/templates';
+@import './sections/my-landing-page/editior';
+@import './sections/my-landing-page/preview';
+@import './sections/my-landing-page/publish';
+
+
+/*----------------------------
+mcp-maintenance
+----------------------------*/
+@import './sections/mcp-maintenance/header';
+@import './sections/mcp-maintenance/banner';

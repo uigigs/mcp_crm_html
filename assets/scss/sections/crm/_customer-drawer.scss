@@ -1,0 +1,313 @@
+/*-- add-customer-drawer --*/
+.custom-drawer {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: left 0.5s ease;
+    &.active {
+        right: 0;
+      }
+  }
+  
+  /* Overlay styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    z-index: 999;
+    display: none;
+    &.active {
+        display: block;
+      }
+  }
+  
+
+.add-customer-drawer{
+    .offcanvas{
+        width: 500px;
+    }
+    .offcanvas-header{
+        padding: 40px 30px 35px 30px;
+        .note-close-btn{
+            position: absolute;
+            left: -40px;
+            top: 55px;
+            --bs-btn-close-bg: none;
+            opacity: 1 !important;
+            padding: 0px;
+            height: 24px;
+            width: 24px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+    .offcanvas-title{
+        color: #000;
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 0px;
+    }
+    .offcanvas-body{
+        padding: 0px 30px 30px 30px;
+        overflow-y: scroll;
+        max-height: 100vh;
+        padding-bottom: 150px;
+    }
+
+    .crm-input{
+        margin-bottom: 22px;
+        label{
+            color: #444;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        input{
+            height: 50px;
+            padding: 15px;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            color: #111111;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            &::placeholder{
+                color: #999999;
+            }
+        }
+        textarea{
+            height: 100px;
+            padding: 15px;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            color: #111111;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            resize: none;
+            &::placeholder{
+                color: #999999;
+            }
+        }
+        select{
+            height: 50px;
+            padding: 15px;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        .tags-fild{
+            border-radius: 12px;
+            height: 50px;
+            padding: 10px 15px;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            strong{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 3.64px;
+                color: #111;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 100%;
+                border-radius: 5px; 
+                padding: 5px;
+                min-width: max-content;
+                cursor: pointer;
+                &.design{
+                    background: #FFC972;
+                }
+                &.dev{
+                    background: #E4EE90;
+                }
+                &.seo{
+                    background: #FF9B73;
+                }
+            }
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                overflow: hidden;
+                color: #111111;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                padding: 0px 9px;
+                &::placeholder{
+                    color: #444444;
+                }
+            }
+        }
+        .additional-field{
+            height: 50px;
+            padding: 15px;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            color: #444;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 30px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            position: relative;
+            button{
+                svg{
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    .submit-btn{
+        height: 50px;
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 10px;
+        background: #35B7F3;
+        border: none;
+        outline: none;
+    }
+}
+
+.customer-table-footer{
+    padding: 20px 30px 0px 30px;
+}
+
+.crm-checkbox  {
+    display: block;
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0px !important;
+
+    color: #444 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+    text-transform: none !important;
+
+  }
+  
+  /* Hide the browser's default checkbox */
+  .crm-checkbox  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0 !important;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .crm-checkbox :hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .crm-checkbox  input:checked ~ .checkmark {
+    background-color: #35B7F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .crm-checkbox  input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .crm-checkbox  .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  @media only screen and (max-width: 575px) {
+    .add-customer-drawer {
+        .offcanvas{
+            max-width: 80%;
+        }
+        .address-checkbox{
+            position: absolute;
+            right: 0;
+            top: 55px;
+
+        }
+        .submit-btn{
+            margin-top: 30px;
+        }
+    }
+  }

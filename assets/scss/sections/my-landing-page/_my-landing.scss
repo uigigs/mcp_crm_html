@@ -1,0 +1,205 @@
+.page-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    h2 {
+        margin: 0px;
+    }
+
+    .add-new-btn {
+        height: 45px;
+        width: 150px;
+        border-radius: 10px;
+        background: #35B7F3;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 700;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+.user-tabs-body{
+    position: relative;
+    .add-btn{
+        position: absolute;
+        top: 48px;
+        right: -65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background: #35B7F3;
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}
+
+.my-landing-tab-content {
+    .landing-dropdown {
+        position: relative;
+        height: 40px;
+        width: 170px;
+        &::after {
+            position: absolute;
+            right: 12px;
+            top: 5px;
+            vertical-align: none !important;
+            content: url(../images/icon/dropdown-icon.svg);
+            border: none !important;
+        }
+
+        select {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background: #FFF;
+            outline: none;
+            padding: 0px 15px;
+            -webkit-appearance: none;
+        }
+    }
+}
+
+.my-landing-cards{
+    margin-bottom: 100px;
+}
+.my-landing-card{
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-top: 24px;
+    .card-img{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+        cursor: pointer;
+        .layout-overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: none;
+            border-radius: 15px 15px 0px 0px;
+            background: rgba(0, 0, 0, 0.20);
+            button{
+                border-radius: 10px;
+                background: #35B7F3;
+                height: 40px;
+                width: 130px;
+                color: #FFF;
+                text-align: center;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+            .layout-overlay{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .add-card-bg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 160px;
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+        background: rgba(53, 183, 243, 0.15);
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .card-footer{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 25px;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        position: relative;
+        .page-link{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            h4{
+                color: #000;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            &.center{
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        ul{
+            position: absolute;
+            top: -15px;
+            left: 24px;
+            gap: 10px;
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                overflow: hidden;
+                height: 30px;
+                width: 30px;
+                &.lock{
+                    &.secure{
+                        background: #03c988;
+                    }
+                    &.not-secure{
+                        background: #F33535;
+                    }
+                }
+                &.share{
+                    background: #35B7F3;
+                }
+                img{
+                    height: auto !important;
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}

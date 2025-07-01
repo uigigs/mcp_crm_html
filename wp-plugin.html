@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP - Plugin</title>
+
+    <!-- favicon included here -->
+    <!-- <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon"> -->
+
+    <!-- apple touch icon included here -->
+    <!-- <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg"> -->
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- header section start -->
+  <header class="user-header-section">
+    <div class="header-left">
+      <div class="user-menu-button">
+        <button id="userMenuBtn" type="button" role="button" aria-label="Toggle sidebar menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo/logo.svg" alt="header logo" />
+      </a>
+    </div>
+    <div class="header-right">
+      <form action="/">
+        <!-- <label for="search-input1" class="m-0 visually-hidden">Search</label> -->
+        <button type="button" role="button">
+          <img src="./assets/images/icon/search.svg" alt="search" />
+        </button>
+        <input type="text" id="search-input1" placeholder="Search here..." />
+      </form>
+      <ul class="user-header-right-list">
+        <li>
+          <div class="language-dropdown dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="language dropdown menu">
+              <span class="iconify" data-icon="ph:globe"></span>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">עִברִית</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#">简体中文</a></li>
+              <li><a class="dropdown-item" href="#">Italiano</a></li>
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+            </ol>
+          </div>
+        </li>
+        <li class="notification">
+          <a href="#">
+            <img src="./assets/images/icon/notification.svg" alt="notification" />
+          </a>
+        </li>
+        <li>
+          <div class="avater-menu-dropdown dropdown">
+            <a class="dropdown-toggle dropdown-tigger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="user-menu-avater">
+                <img src="./assets/images/avaters/avater.png" alt="user avatar" />
+              </div>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+            </ol>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- header section End -->
+
+  <!-- side-menu start -->
+  <section class="side-menu active" id="sideMenu">
+    <div class="side-menu-inner">
+      <div class="side-menu-list">
+        <div class="mobile-menu-top">
+          <div class="notificationa-and-language">
+            <div class="language-dropdown dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span
+                  class="iconify" data-icon="ph:globe" aria-label="language dropdown menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">עִברִית</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                <li><a class="dropdown-item" href="#">简体中文</a></li>
+                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+              </ul>
+            </div>
+            <div class="notification">
+              <a href="#"><img src="./assets/images/icon/notification.svg" alt="icon" /></a>
+            </div>
+          </div>
+
+          <form action="/">
+            <!-- <label for="search-input2" class="m-0 visually-hidden">Search</label> -->
+            <button type="button" role="button">
+              <img src="./assets/images/icon/search.svg" alt="search" />
+            </button>
+            <input type="text" id="search-input2" placeholder="Search here..." />
+          </form>
+        </div>
+        <a href="#">
+          <img src="./assets/images/icon/home.svg" alt="Dashboard icon" />
+          <span>Dashboard</span>
+        </a>
+
+        <div class="panel-group" id="accordionMenuExample">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseOne"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/people.svg" alt="my account icon" />
+                  <span>My Account</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseTwo"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/domain.svg" alt="domain icon" />
+                  <span>Domain</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseThree"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketing.svg" alt="Marketing Tools icon" />
+                  <span>Marketing Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFour"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/network.svg" alt="Network Tools icon" />
+                  <span>Network Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFive"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketplace.svg" alt="Marketplace icon" />
+                  <span>Marketplace</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body pr-0 pt-2">
+                <div class="panel-group" id="accordionSubmenuMenuExample">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionSubmenuMenuExample"
+                          href="#menu-collapseSubmenuFive" aria-expanded="false" class="collapsed accordion-btn">
+                          Code
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="menu-collapseSubmenuFive" class="panel-collapse collapse" aria-expanded="false"
+                      style="height: 0px;">
+                      <div class="panel-body p-0">
+                        <ul>
+                          <li><a href="#">WP Plugins</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseSix"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/crm.svg" alt="CRM icon" />
+                  <span>CRM</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseSix" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <div class="submenu-list-content">
+                  <ul>
+                    <li>
+                      <a href="#" class="active">Dashboard</a>
+                      <a href="#">Customer</a>
+                      <a href="#">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <p>Maxstore Cloud Platforms <br />v0. 17. 1597-189</p>
+        <button class="side-menu-close-btn" id="sideMenuCloseBtn">
+          <img src="./assets/images/icon/dropdown-icon.svg" alt="sidebar close" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- side-menu End -->
+
+    <!-- user-body-section start -->
+    <section class="user-body-section active uig-pt-115">
+      <div class="user-body-container">
+        <h2 class="page-title">WordPress Plugins</h2>
+        <div class="user-tabs-body">
+          <ul class="nav nav-pills tablist" id="myTabs">
+            <li class="active"><a class="tab-btn" href="#plugins" data-toggle="tab">Plugins</a></li>
+            <li><a class="tab-btn" href="#my-plugins" data-toggle="tab">My Plugins</a></li>
+          </ul>
+        
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="plugins">
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="wp-plugins-card">
+                    <div class="wp-plugins-card-header pb-0 no-border">
+                      <h3 class="mb-0">CreditGuard for <br />WooCommerce</h3>
+                    </div>
+                    <div class="wp-plugins-card-body">
+                      <div class="wp-card-dropdown">
+                        <label
+                          for="creditguard-select"
+                          class="m-0 visually-hidden"
+                          >payment dropdown</label
+                        >
+                        <div class="payment-dropdown wp-dropdown">
+                          <select
+                            id="creditguard-select"
+                            name="payment-dropdown1"
+                            class="wp-dropdown-select"
+                          >
+                            <option value="default">Basic</option>
+                            <option value="pro">Pro</option>
+                            <option value="advance">Advance</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <form>
+                        <span id="creditguard-basic" class="basic">
+                          ₪585.00ILS
+                        </span>
+                        <span id="creditguard-advance" class="advance">
+                          ₪855.00ILS
+                        </span>
+                        <span id="creditguard-pro" class="pro">
+                          ₪1200.00ILS
+                        </span>
+                        <button
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#paymentModal"
+                        >
+                          <img
+                            src="./assets/images/icon/shopping-cart.svg"
+                            alt="icon"
+                          />Order Now
+                        </button>
+                      </form>
+
+                      <div class="plugin-card-text">
+                        <p>מתאים לחיבור סליקה של חברת ווריפון</p>
+                        <p>מתאים לחיבור סליקה של חברת קרדיט גארד</p>
+                        <p>ממשק ניהול פשוט</p>
+                        <p>תמיכה במדרגות תשלומים</p>
+                        <p>פועל ב Iframe & Redirect</p>
+                        <p>תמיכה בריבוי שפות באמצעות WPML</p>
+                        <p>תמיכה בחשבוניות של ט.מ.ל</p>
+                        <p>תמיכה ב J4 / J5</p>
+
+                        <p>*רישוי לאתר אחד כולל תמיכה ועדכונים לשנה</p>
+                        <p>
+                          240 חידוש תמיכה ועדכונים לשנה נוספת בעלות ש"ח + מעמ
+                        </p>
+                        <button class="show-more-button">
+                          <span class="show-more">Show More +</span>
+                          <span class="show-less">Show Less -</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="wp-plugins-card">
+                    <div class="wp-plugins-card-header pb-0 no-border">
+                      <h3 class="mb-0">Tranzila for <br />WooCommerce</h3>
+                    </div>
+                    <div class="wp-plugins-card-body">
+                      <div class="wp-card-dropdown">
+                        <label for="tranzila-select" class="m-0 visually-hidden"
+                          >payment dropdown</label
+                        >
+                        <div class="payment-dropdown wp-dropdown">
+                          <select
+                            id="tranzila-select"
+                            name="payment-dropdown2"
+                            class="wp-dropdown-select"
+                          >
+                            <option value="default">Basic</option>
+                            <option value="pro">Pro</option>
+                            <option value="advance">Advance</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <form>
+                        <span id="tranzila-basic" class="basic">
+                          ₪585.00ILS
+                        </span>
+                        <span id="tranzila-advance" class="advance">
+                          ₪855.00ILS
+                        </span>
+                        <span id="tranzila-pro" class="pro">₪1200.00ILS</span>
+                        <button
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#paymentModal"
+                        >
+                          <img
+                            src="./assets/images/icon/shopping-cart.svg"
+                            alt="icon"
+                          />Order Now
+                        </button>
+                      </form>
+
+                      <div class="plugin-card-text">
+                        <p>מתאים לחיבור סליקה של חברת ווריפון</p>
+                        <p>מתאים לחיבור סליקה של חברת קרדיט גארד</p>
+                        <p>ממשק ניהול פשוט</p>
+                        <p>תמיכה במדרגות תשלומים</p>
+                        <p>פועל ב Iframe & Redirect</p>
+                        <p>תמיכה בריבוי שפות באמצעות WPML</p>
+                        <p>תמיכה בחשבוניות של ט.מ.ל</p>
+                        <p>תמיכה ב J4 / J5</p>
+
+                        <p>*רישוי לאתר אחד כולל תמיכה ועדכונים לשנה</p>
+                        <p>
+                          300 חידוש תמיכה ועדכונים לשנה נוספת בעלות ש"ח + מעמ
+                        </p>
+                        <button class="show-more-button">
+                          <span class="show-more">Show More +</span>
+                          <span class="show-less">Show Less -</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="wp-plugins-card">
+                    <div class="wp-plugins-card-header pb-0 no-border">
+                      <h3 class="mb-0">ZAP AI for <br />WooCommerce</h3>
+                    </div>
+                    <div class="wp-plugins-card-body">
+                      <div class="wp-card-dropdown"></div>
+
+                      <form>
+                        <!-- <label for="wp-plugin-value" class="m-0 visually-hidden">payment value</label> -->
+                        <span class="basic"> ₪585.00ILS </span>
+                        <button
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#paymentModal"
+                        >
+                          <img
+                            src="./assets/images/icon/shopping-cart.svg"
+                            alt="icon"
+                          />Order Now
+                        </button>
+                      </form>
+
+                      <div class="plugin-card-text">
+                        <p>מתאים לחיבור סליקה של חברת ווריפון</p>
+                        <p>מתאים לחיבור סליקה של חברת קרדיט גארד</p>
+                        <p>ממשק ניהול פשוט</p>
+                        <p>תמיכה במדרגות תשלומים</p>
+                        <p>פועל ב Iframe & Redirect</p>
+                        <p>תמיכה בריבוי שפות באמצעות WPML</p>
+                        <p>תמיכה בחשבוניות של ט.מ.ל</p>
+                        <p>תמיכה ב J4 / J5</p>
+
+                        <p>*רישוי לאתר אחד כולל תמיכה ועדכונים לשנה</p>
+                        <p>חידוש התוסף לשנה נוספת יחושב לפי כמות תתי אתרים</p>
+
+                        <p>
+                          מחירי רישוי לתתי אתרים לשנה <br />
+                          0-5 אתרים 120 ש"ח + מע"מ לרישוי לשנה
+                          <br />
+                          6-10 אתרים 100 ש"ח + מע"מ לרישוי לשנה <br />
+                          11-20 אתרים 80 ש"ח + מע"מ לרישוי לשנה <br />
+                          21+ אתרים 60 ש"ח + מע"מ לרישוי לשנה
+                        </p>
+                        <button class="show-more-button">
+                          <span class="show-more">Show More +</span>
+                          <span class="show-less">Show Less -</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="my-plugins">
+              <div class="my-plugin-card">
+                <div class="my-plugin-card-header">
+                  <form action="/">
+                    <div class="filter-dropdown wp-dropdown">
+                      <select name="filter" name="filter" id="filter">
+                        <option value="filter" selected>Filter</option>
+                        <option value="2">-</option>
+                        <option value="3">-</option>
+                        <option value="4">-</option>
+                        <option value="5">-</option>
+                      </select>
+                    </div>
+                    <div class="search-box">
+                      <button>
+                        <img src="./assets/images/icon/search.svg" alt="icon" />
+                      </button>
+                      <input type="text" placeholder="Search" />
+                    </div>
+                  </form>
+                </div>
+                <div class="my-plugin-content">
+                  <div class="my-plugin-table">
+                    <div class="my-plugin-table-header">
+                      <ul class="table-row">
+                        <li class="table-cell">Item(s)</li>
+                        <li class="table-cell">Next due date</li>
+                        <li class="table-cell">Status</li>
+                        <li class="table-cell">Version</li>
+                        <li class="table-cell">Actions</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="my-plugin-table-body accordion accordion-flush panel-group"
+                      id="accordionTableExample"
+                    >
+                      <div class="accordion-item panel panel-default">
+                        <ul class="table-row accordion-header panel-heading">
+                          <li class="table-cell">
+                            <strong>Item(s)</strong>
+                            <p>CreditGuard for WooCommerce</p>
+                            <span>DX26YCdz25GGft9</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Next due date</strong>
+                            <p>28th Dec, 2023</p>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Status</strong>
+                            <span class="active">Active</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Version</strong>
+                            <p>Pro</p>
+                          </li>
+                          <li class="table-cell panel-title">
+                            <strong>Actions</strong>
+                            <div class="table-btn-cell">
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle download-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Download
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Last Plugin Version</a></li>
+                                  <li><a href="#">Show old version</a></li>
+                                  <li><a href="#">Change Log</a></li>
+                                </ul>
+                              </div>
+                              <button data-toggle="collapse" data-parent="#accordionTableExample" href="#table-collapseOne" aria-expanded="false" class="collapsed accordion-btn collups-btn accordion-button">
+                                <img src="./assets/images/icon/colups-arrow-blue.svg" alt="icon" />
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                        <div
+                          id="table-collapseOne"
+                          class="accordion-collapse collapse panel-collapse collapse"
+                          aria-expanded="false" style="height: 0px;"
+                        >
+                          <div class="accordion-body pt-0">
+                            <div class="table-accordion-inner">
+                              <ul
+                                class="nav nav-pills tablist"
+                                id="table-tab1"
+                                role="tablist"
+                              >
+                                <li class="active"><a class="tab-btn" href="#license" data-toggle="tab">Manage License</a></li>
+                                <li><a class="tab-btn" href="#addons" data-toggle="tab">Addons</a></li>
+                                <li><a class="tab-btn" href="#note" data-toggle="tab">Note</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="tab-content">
+                              <div class="tab-pane fade in active" id="license">
+                                <div class="table-tab-content-inner">
+                                  <div class="row table-accordion-inner">
+                                    <div class="col-md-5">
+                                      <label>License Key</label>
+                                      <div class="row-card">
+                                        <p class="copy-text">DX26YCdz25GGft9</p>
+                                        <span class="copy">
+                                          <img
+                                            src="./assets/images/icon/copy.svg"
+                                            alt="copy icon"
+                                            class="copy-icon"
+                                          />
+                                          <img
+                                            src="./assets/images/icon/check-green.svg"
+                                            alt="check icon"
+                                            class="check-icon"
+                                          />
+                                          <span class="copied-message"
+                                            >Copied</span
+                                          >
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="license-table-right">
+                                        <ul class="license-table-right-list">
+                                          <li>
+                                            <label>Valid Domain (2/5)</label>
+                                          </li>
+                                          <li><label>Valid IP</label></li>
+                                        </ul>
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.domain.com</p>
+                                            </li>
+                                            <li>
+                                              <p>10.256.58.05</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.business.co.il</p>
+                                            </li>
+                                            <li>
+                                              <p>10.256.58.05</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.eshopgo.co.il</p>
+                                            </li>
+                                            <li>
+                                              <p>28.896.518.30</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.eorabgeshop.com</p>
+                                            </li>
+                                            <li>
+                                              <p>10.256.58.05</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.mysite.com</p>
+                                            </li>
+                                            <li>
+                                              <p>10.256.58.05</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <ul class="table-row">
+                                    <li class="table-cell">
+                                      <span class="uppercase">Active</span>
+                                      <p>License Status</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Registration date</span
+                                      >
+                                      <p>28th Dec, 2022</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Next Due Date</span
+                                      >
+                                      <p>28th Dec, 2023</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase">version</span>
+                                      <p>Pro</p>
+                                    </li>
+                                    <li class="table-cell">&nbsp;</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade in" id="addons">
+                                <div class="table-tab-content-inner addon-table-section">
+                                  <div
+                                    class="addons-table table-accordion-inner"
+                                  >
+                                    <ul class="addons-tr-list">
+                                      <li><label>Domain</label></li>
+                                      <li><label>IP</label></li>
+                                      <li><label>Addon Number</label></li>
+                                      <li><label>Register At</label></li>
+                                      <li><label>Next Renew</label></li>
+                                      <li>
+                                        <label>Auto Renew</label>
+                                        <span class="auto-renew-info-icon"
+                                          ><img
+                                            src="./assets/images/icon/info.svg"
+                                            alt="icon"
+                                        /></span>
+                                        <div class="auto-renew-info">
+                                          <p>
+                                            When automatic renewal is activated,
+                                            we will try to charge the credit
+                                            card saved in the system two days
+                                            before the renewal date.
+                                          </p>
+                                          <div class="highlight">
+                                            <p>
+                                              Attention: after the charged for a
+                                              renewal, you cannot receive a
+                                              refund in accordance with the
+                                              returns policy
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <div class="addons-table-body">
+                                      <div class="addons-table-row">
+                                        <ul class="addons-tr-list">
+                                          <li>
+                                            <p>www.domain.com</p>
+                                          </li>
+                                          <li>
+                                            <p>10.256.58.05</p>
+                                          </li>
+                                          <li>
+                                            <p>1/05</p>
+                                          </li>
+                                          <li>
+                                            <p>25th Jan, 2023</p>
+                                          </li>
+                                          <li>
+                                            <p>24th Jan, 2024</p>
+                                          </li>
+                                          <li>
+                                            <div class="table-last-cell">
+                                              <div class="form-check form-switch toggle-switch">
+                                                <div class="checkbox-switch">
+                                                  <label>
+                                                    <input type="checkbox" class="form-check-input toggle-switch-input">
+                                                    <span class="slider"></span>
+                                                  </label>
+                                                </div>
+                                                <label class="form-check-label toggle-switch-label">off</label>
+                                              </div>
+                                              <div class="tr-menu">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-secondary dropdown-toggle download-btn" type="button" id="addonDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./assets/images/icon/3dots-icon.svg" alt="icon"/>
+                                                  </button>
+                                                  <ul class="dropdown-menu" aria-labelledby="addonDropdown1">
+                                                    <li><a href="#" class="dropdown-item">Reissue</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#CancelAddonModal">Cancel Addon</a></li>
+                                                    <li><a href="#" class="dropdown-item renew-btn" data-toggle="modal" data-target="#paymentModal">Renew Now</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#addNoteModal">Add Note</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="addons-table-row">
+                                        <ul class="addons-tr-list">
+                                          <li>
+                                            <p>www.domain.com</p>
+                                          </li>
+                                          <li>
+                                            <p>10.256.58.05</p>
+                                          </li>
+                                          <li>
+                                            <p>2/05</p>
+                                          </li>
+                                          <li>
+                                            <p>25th Jan, 2023</p>
+                                          </li>
+                                          <li>
+                                            <p>24th Jan, 2024</p>
+                                          </li>
+                                          <li>
+                                            <div class="table-last-cell">
+                                              <div class="form-check form-switch toggle-switch">
+                                                <div class="checkbox-switch">
+                                                  <label>
+                                                    <input type="checkbox" class="form-check-input toggle-switch-input">
+                                                    <span class="slider"></span>
+                                                  </label>
+                                                </div>
+                                                <label class="form-check-label toggle-switch-label">off</label>
+                                              </div>
+                                              <div class="tr-menu">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-secondary dropdown-toggle download-btn" type="button" id="addonDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./assets/images/icon/3dots-icon.svg" alt="icon"/>
+                                                  </button>
+                                                  <ul class="dropdown-menu" aria-labelledby="addonDropdown2">
+                                                    <li><a href="#" class="dropdown-item">Reissue</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#CancelAddonModal">Cancel Addon</a></li>
+                                                    <li><a href="#" class="dropdown-item renew-btn" data-toggle="modal" data-target="#paymentModal">Renew Now</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#addNoteModal">Add Note</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="addons-table-row">
+                                        <ul class="addons-tr-list">
+                                          <li>
+                                            <p>www.domain.com</p>
+                                          </li>
+                                          <li>
+                                            <p>28.896.518.30</p>
+                                          </li>
+                                          <li>
+                                            <p>3/05</p>
+                                          </li>
+                                          <li>
+                                            <p>25th Jan, 2023</p>
+                                          </li>
+                                          <li>
+                                            <p>24th Jan, 2024</p>
+                                          </li>
+                                          <li>
+                                            <div class="table-last-cell">
+                                              <div class="form-check form-switch toggle-switch">
+                                                <div class="checkbox-switch">
+                                                  <label>
+                                                    <input type="checkbox" class="form-check-input toggle-switch-input">
+                                                    <span class="slider"></span>
+                                                  </label>
+                                                </div>
+                                                <label class="form-check-label toggle-switch-label">off</label>
+                                              </div>
+                                              <div class="tr-menu">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-secondary dropdown-toggle download-btn" type="button" id="addonDropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./assets/images/icon/3dots-icon.svg" alt="icon"/>
+                                                  </button>
+                                                  <ul class="dropdown-menu" aria-labelledby="addonDropdown3">
+                                                    <li><a href="#" class="dropdown-item">Reissue</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#CancelAddonModal">Cancel Addon</a></li>
+                                                    <li><a href="#" class="dropdown-item renew-btn" data-toggle="modal" data-target="#paymentModal">Renew Now</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#addNoteModal">Add Note</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="addons-table-row">
+                                        <ul class="addons-tr-list">
+                                          <li>
+                                            <p>www.domain.com</p>
+                                          </li>
+                                          <li>
+                                            <p>10.256.58.05</p>
+                                          </li>
+                                          <li>
+                                            <p>4/05</p>
+                                          </li>
+                                          <li>
+                                            <p>25th Jan, 2023</p>
+                                          </li>
+                                          <li>
+                                            <p>24th Jan, 2024</p>
+                                          </li>
+                                          <li>
+                                            <div class="table-last-cell">
+                                              <div class="form-check form-switch toggle-switch">
+                                                <div class="checkbox-switch">
+                                                  <label>
+                                                    <input type="checkbox" class="form-check-input toggle-switch-input">
+                                                    <span class="slider"></span>
+                                                  </label>
+                                                </div>
+                                                <label class="form-check-label toggle-switch-label">off</label>
+                                              </div>
+                                              <div class="tr-menu">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-secondary dropdown-toggle download-btn" type="button" id="addonDropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./assets/images/icon/3dots-icon.svg" alt="icon"/>
+                                                  </button>
+                                                  <ul class="dropdown-menu" aria-labelledby="addonDropdown4">
+                                                    <li><a href="#" class="dropdown-item">Reissue</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#CancelAddonModal">Cancel Addon</a></li>
+                                                    <li><a href="#" class="dropdown-item renew-btn" data-toggle="modal" data-target="#paymentModal">Renew Now</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#addNoteModal">Add Note</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="addons-table-row">
+                                        <ul class="addons-tr-list">
+                                          <li>
+                                            <p>www.domain.com</p>
+                                          </li>
+                                          <li>
+                                            <p>10.256.58.05</p>
+                                          </li>
+                                          <li>
+                                            <p>5/05</p>
+                                          </li>
+                                          <li>
+                                            <p>25th Jan, 2023</p>
+                                          </li>
+                                          <li>
+                                            <p>24th Jan, 2024</p>
+                                          </li>
+                                          <li>
+                                            <div class="table-last-cell">
+                                              <div class="form-check form-switch toggle-switch">
+                                                <div class="checkbox-switch">
+                                                  <label>
+                                                    <input type="checkbox" class="form-check-input toggle-switch-input">
+                                                    <span class="slider"></span>
+                                                  </label>
+                                                </div>
+                                                <label class="form-check-label toggle-switch-label">off</label>
+                                              </div>
+                                              <div class="tr-menu">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-secondary dropdown-toggle download-btn" type="button" id="addonDropdown5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <img src="./assets/images/icon/3dots-icon.svg" alt="icon"/>
+                                                  </button>
+                                                  <ul class="dropdown-menu" aria-labelledby="addonDropdown5">
+                                                    <li><a href="#" class="dropdown-item">Reissue</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#CancelAddonModal">Cancel Addon</a></li>
+                                                    <li><a href="#" class="dropdown-item renew-btn" data-toggle="modal" data-target="#paymentModal">Renew Now</a></li>
+                                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#addNoteModal">Add Note</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <div class="addons-table-action">
+                                        <button>Order New Addon</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade in" id="note">
+                                <div class="table-tab-content-inner">
+                                  <div
+                                    class="note-content table-accordion-inner"
+                                  >
+                                    <div class="note-textarea">
+                                      <textarea
+                                        placeholder="Enter your note "
+                                      ></textarea>
+                                      <button
+                                        type="button"
+                                        class="wp-primary-btn"
+                                      >
+                                        Submit
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item panel panel-default">
+                        <ul class="table-row accordion-header panel-heading">
+                          <li class="table-cell">
+                            <strong>Item(s)</strong>
+                            <p>Tranzila for WooCommerce</p>
+                            <span>DX26YCdz25GGft9</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Next due date</strong>
+                            <p>28th Dec, 2023</p>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Status</strong>
+                            <span class="active">Active</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Version</strong>
+                            <p>Basic</p>
+                          </li>
+                          <li class="table-cell panel-title">
+                            <strong>Actions</strong>
+                            <div class="table-btn-cell">
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle download-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Download
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Last Plugin Version</a></li>
+                                  <li><a href="#">Show old version</a></li>
+                                  <li><a href="#">Change Log</a></li>
+                                </ul>
+                              </div>
+                              <button data-toggle="collapse" data-parent="#accordionTableExample" href="#table-collapseTwo" aria-expanded="false" class="collapsed accordion-btn collups-btn accordion-button">
+                                <img src="./assets/images/icon/colups-arrow-blue.svg" alt="icon" />
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                        <div
+                          id="table-collapseTwo"
+                          class="accordion-collapse collapse panel-collapse collapse"
+                          aria-expanded="false" style="height: 0px;"
+                        >
+                          <div class="accordion-body pt-0">
+                            <div class="table-accordion-inner">
+                              <ul
+                                class="nav nav-pills tablist"
+                                id="table-tab2"
+                                role="tablist"
+                              >
+                                <li class="active"><a class="tab-btn" href="#license2" data-toggle="tab">Manage License</a></li>
+                                <li><a class="tab-btn" href="#note2" data-toggle="tab">Note</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="tab-content">
+                              <div class="tab-pane fade in active" id="license2">
+                                <div class="table-tab-content-inner">
+                                  <div class="row table-accordion-inner">
+                                    <div class="col-md-5">
+                                      <label>License Key</label>
+                                      <div class="row-card">
+                                        <p class="copy-text">DX26YCdz25GGft9</p>
+                                        <span class="copy">
+                                          <img
+                                            src="./assets/images/icon/copy.svg"
+                                            alt="copy icon"
+                                            class="copy-icon"
+                                          />
+                                          <img
+                                            src="./assets/images/icon/check-green.svg"
+                                            alt="check icon"
+                                            class="check-icon"
+                                          />
+                                          <span class="copied-message"
+                                            >Copied</span
+                                          >
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="license-table-right">
+                                        <ul class="license-table-right-list">
+                                          <li>
+                                            <label>Valid Domain (2/5)</label>
+                                          </li>
+                                          <li><label>Valid IP</label></li>
+                                        </ul>
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.domain.com</p>
+                                            </li>
+                                            <li class="license-table-right-action">
+                                              <p>10.256.58.05</p>
+                                              <div class="dropdown">
+                                                <a
+                                                  class="download-btn"
+                                                  href="#"
+                                                  role="button"
+                                                  data-bs-toggle="dropdown"
+                                                  aria-expanded="false"
+                                                >
+                                                  <img
+                                                    src="./assets/images/icon/3dots-icon.svg"
+                                                    alt="icon"
+                                                  />
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      >Reissue</a
+                                                    >
+                                                  </li>
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#CancelAddonModal"
+                                                      >Cancel Addon</a
+                                                    >
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <ul class="table-row">
+                                    <li class="table-cell">
+                                      <span class="uppercase">Active</span>
+                                      <p>License Status</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Registration date</span
+                                      >
+                                      <p>28th Dec, 2022</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Next Due Date</span
+                                      >
+                                      <p>28th Dec, 2023</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase">version</span>
+                                      <p>Basic</p>
+                                    </li>
+                                    <li class="table-cell text-left">
+                                      <span>Auto Renew</span>
+                                      <div
+                                        class="form-check form-switch toggle-switch"
+                                      >
+                                        <input
+                                          class="form-check-input toggle-switch-input"
+                                          type="checkbox"
+                                          role="switch"
+                                        />
+                                        <label
+                                          class="form-check-label toggle-switch-label"
+                                          >off</label
+                                        >
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade in" id="note2">
+                                <div class="table-tab-content-inner">
+                                  <div
+                                    class="note-content table-accordion-inner"
+                                  >
+                                    <div class="note-textarea">
+                                      <textarea
+                                        placeholder="Enter your note "
+                                      ></textarea>
+                                      <button
+                                        type="button"
+                                        class="wp-primary-btn"
+                                      >
+                                        Submit
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item panel panel-default">
+                        <ul class="table-row accordion-header panel-heading">
+                          <li class="table-cell">
+                            <strong>Item(s)</strong>
+                            <p>ZAP AI for WooCommerce</p>
+                            <span>DX26YCdz25GGft9</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Next due date</strong>
+                            <p>28th Dec, 2023</p>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Status</strong>
+                            <span class="cancelled">Cancelled</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Version</strong>
+                            <p>Basic</p>
+                          </li>
+                          <li class="table-cell panel-title">
+                            <strong>Actions</strong>
+                            <div class="table-btn-cell">
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle download-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Download
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Last Plugin Version</a></li>
+                                  <li><a href="#">Show old version</a></li>
+                                  <li><a href="#">Change Log</a></li>
+                                </ul>
+                              </div>
+                              <button data-toggle="collapse" data-parent="#accordionTableExample" href="#table-collapseThree" aria-expanded="false" class="collapsed accordion-btn collups-btn accordion-button">
+                                <img src="./assets/images/icon/colups-arrow-blue.svg" alt="icon" />
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                        <div
+                          id="table-collapseThree"
+                          class="accordion-collapse collapse panel-collapse collapse"
+                          aria-expanded="false" style="height: 0px;"
+                        >
+                          <div class="accordion-body pt-0">
+                            <div class="table-accordion-inner">
+                              <ul
+                                class="nav nav-pills tablist"
+                                id="table-tab2"
+                                role="tablist"
+                              >
+                                <li class="active"><a class="tab-btn" href="#license3" data-toggle="tab">Manage License</a></li>
+                                <li><a class="tab-btn" href="#note3" data-toggle="tab">Note</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="tab-content" id="table-tabContent3">
+                              <div class="tab-pane fade in active" id="license3">
+                                <div class="table-tab-content-inner">
+                                  <div class="row table-accordion-inner">
+                                    <div class="col-md-5">
+                                      <label>License Key</label>
+                                      <div class="row-card">
+                                        <p class="copy-text">DX26YCdz25GGft9</p>
+                                        <span class="copy">
+                                          <img
+                                            src="./assets/images/icon/copy.svg"
+                                            alt="copy icon"
+                                            class="copy-icon"
+                                          />
+                                          <img
+                                            src="./assets/images/icon/check-green.svg"
+                                            alt="check icon"
+                                            class="check-icon"
+                                          />
+                                          <span class="copied-message"
+                                            >Copied</span
+                                          >
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="license-table-right">
+                                        <ul class="license-table-right-list">
+                                          <li>
+                                            <label>Valid Domain (2/5)</label>
+                                          </li>
+                                          <li><label>Valid IP</label></li>
+                                        </ul>
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.domain.com</p>
+                                            </li>
+                                            <li class="license-table-right-action">
+                                              <p>10.256.58.05</p>
+                                              <div class="dropdown">
+                                                <a
+                                                  class="download-btn"
+                                                  href="#"
+                                                  role="button"
+                                                  data-bs-toggle="dropdown"
+                                                  aria-expanded="false"
+                                                >
+                                                  <img
+                                                    src="./assets/images/icon/3dots-icon.svg"
+                                                    alt="icon"
+                                                  />
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      >Reissue</a
+                                                    >
+                                                  </li>
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#CancelAddonModal"
+                                                      >Cancel Addon</a
+                                                    >
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <ul class="table-row">
+                                    <li class="table-cell">
+                                      <span class="uppercase">Active</span>
+                                      <p>License Status</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Registration date</span
+                                      >
+                                      <p>28th Dec, 2022</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Next Due Date</span
+                                      >
+                                      <p>28th Dec, 2023</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase">version</span>
+                                      <p>Basic</p>
+                                    </li>
+                                    <li class="table-cell text-left">
+                                      <span>Auto Renew</span>
+                                      <div
+                                        class="form-check form-switch toggle-switch"
+                                      >
+                                        <input
+                                          class="form-check-input toggle-switch-input"
+                                          type="checkbox"
+                                          role="switch"
+                                        />
+                                        <label
+                                          class="form-check-label toggle-switch-label"
+                                          >off</label
+                                        >
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade in" id="note3">
+                                <div class="table-tab-content-inner">
+                                  <div
+                                    class="note-content table-accordion-inner"
+                                  >
+                                    <div class="note-textarea">
+                                      <textarea
+                                        placeholder="Enter your note "
+                                      ></textarea>
+                                      <button
+                                        type="button"
+                                        class="wp-primary-btn"
+                                      >
+                                        Submit
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item panel panel-default">
+                        <ul class="table-row accordion-header panel-heading">
+                          <li class="table-cell">
+                            <strong>Item(s)</strong>
+                            <p>CreditGuard for WooCommerce</p>
+                            <span>DX26YCdz25GGft9</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Next due date</strong>
+                            <p>28th Dec, 2023</p>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Status</strong>
+                            <span class="active">Active</span>
+                          </li>
+                          <li class="table-cell">
+                            <strong>Version</strong>
+                            <p>Basic</p>
+                          </li>
+                          <li class="table-cell panel-title">
+                            <strong>Actions</strong>
+                            <div class="table-btn-cell">
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle download-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Download
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Last Plugin Version</a></li>
+                                  <li><a href="#">Show old version</a></li>
+                                  <li><a href="#">Change Log</a></li>
+                                </ul>
+                              </div>
+                              <button data-toggle="collapse" data-parent="#accordionTableExample" href="#table-collapseFour" aria-expanded="false" class="collapsed accordion-btn collups-btn accordion-button">
+                                <img src="./assets/images/icon/colups-arrow-blue.svg" alt="icon" />
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                        <div
+                          id="table-collapseFour"
+                          class="accordion-collapse collapse panel-collapse collapse"
+                          aria-expanded="false" style="height: 0px;"
+                        >
+                          <div class="accordion-body pt-0">
+                            <div class="table-accordion-inner">
+                              <ul
+                                class="nav nav-pills tablist"
+                                id="table-tab2"
+                                role="tablist"
+                              >
+                                <li class="active"><a class="tab-btn" href="#license4" data-toggle="tab">Manage License</a></li>
+                                <li><a class="tab-btn" href="#note4" data-toggle="tab">Note</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="tab-content" id="table-tabContent4">
+                              <div class="tab-pane fade in active" id="license4">
+                                <div class="table-tab-content-inner">
+                                  <div class="row table-accordion-inner">
+                                    <div class="col-md-5">
+                                      <label>License Key</label>
+                                      <div class="row-card">
+                                        <p class="copy-text">DX26YCdz25GGft9</p>
+                                        <span class="copy">
+                                          <img
+                                            src="./assets/images/icon/copy.svg"
+                                            alt="copy icon"
+                                            class="copy-icon"
+                                          />
+                                          <img
+                                            src="./assets/images/icon/check-green.svg"
+                                            alt="check icon"
+                                            class="check-icon"
+                                          />
+                                          <span class="copied-message"
+                                            >Copied</span
+                                          >
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="license-table-right">
+                                        <ul class="license-table-right-list">
+                                          <li>
+                                            <label>Valid Domain (2/5)</label>
+                                          </li>
+                                          <li><label>Valid IP</label></li>
+                                        </ul>
+                                        <div class="row-card p-0">
+                                          <ul class="license-table-right-list">
+                                            <li>
+                                              <p>www.domain.com</p>
+                                            </li>
+                                            <li class="license-table-right-action">
+                                              <p>10.256.58.05</p>
+                                              <div class="dropdown">
+                                                <a
+                                                  class="download-btn"
+                                                  href="#"
+                                                  role="button"
+                                                  data-bs-toggle="dropdown"
+                                                  aria-expanded="false"
+                                                >
+                                                  <img
+                                                    src="./assets/images/icon/3dots-icon.svg"
+                                                    alt="icon"
+                                                  />
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      >Reissue</a
+                                                    >
+                                                  </li>
+                                                  <li class="p-0 w-100">
+                                                    <a
+                                                      class="dropdown-item"
+                                                      href="#"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#CancelAddonModal"
+                                                      >Cancel Addon</a
+                                                    >
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <ul class="table-row">
+                                    <li class="table-cell">
+                                      <span class="uppercase">Active</span>
+                                      <p>License Status</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Registration date</span
+                                      >
+                                      <p>28th Dec, 2022</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase"
+                                        >Next Due Date</span
+                                      >
+                                      <p>28th Dec, 2023</p>
+                                    </li>
+                                    <li class="table-cell">
+                                      <span class="uppercase">version</span>
+                                      <p>Basic</p>
+                                    </li>
+                                    <li class="table-cell text-left">
+                                      <span>Auto Renew</span>
+                                      <div
+                                        class="form-check form-switch toggle-switch"
+                                      >
+                                        <input
+                                          class="form-check-input toggle-switch-input"
+                                          type="checkbox"
+                                          role="switch"
+                                        />
+                                        <label
+                                          class="form-check-label toggle-switch-label"
+                                          >off</label
+                                        >
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade in" id="note4">
+                                <div class="table-tab-content-inner">
+                                  <div
+                                    class="note-content table-accordion-inner"
+                                  >
+                                    <div class="note-textarea">
+                                      <textarea
+                                        placeholder="Enter your note "
+                                      ></textarea>
+                                      <button
+                                        type="button"
+                                        class="wp-primary-btn"
+                                      >
+                                        Submit
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination uig-mt-20 uig-mb-10">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./assets/images/icon/accordion-icon.svg"
+                          alt="icon"
+                        />
+                      </a>
+                    </li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./assets/images/icon/accordion-icon.svg"
+                          alt="icon"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- user-body-section end -->
+
+    <!-- Cancel Addon Modal -->
+    <div
+      class="modal fade"
+      id="CancelAddonModal"
+      tabindex="-1"
+      aria-labelledby="CancelAddonModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header p-0">
+            <h2 class="modal-title fs-5" id="CancelAddonModalLabel">
+              Cancel Addon
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ><img src="./assets/images/icon/close.png" alt=""></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="modal-alart-text">
+              <p>
+                Are you sure you want to cancel the product? Canceling the
+                product will cause the plugin to stop.
+              </p>
+              <p>
+                The cancellation will also stop the future payments for the
+                plugin renewal
+              </p>
+            </div>
+            <div class="modal-checkbox">
+              <input type="checkbox" id="termsAndService" />
+              <label for="termsAndService"
+                >I agree to the <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a></label
+              >
+            </div>
+            <button
+              type="button"
+              class="cancellation-btn"
+              data-dismiss="modal"
+            >
+              Confirm Cancellation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Note Modal -->
+    <div
+      class="modal fade"
+      id="addNoteModal"
+      tabindex="-1"
+      aria-labelledby="addNoteModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header p-0">
+            <h2 class="modal-title fs-5" id="addNoteModalLabel">Add Note</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ><img src="./assets/images/icon/close.png" alt=""></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="note-textarea">
+              <textarea placeholder="Enter your note "></textarea>
+            </div>
+            <button
+              type="button"
+              class="modal-primary-btn"
+              data-dismiss="modal"
+            >
+              Confirm Cancellation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paymenyt Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="payment-modal-content payment-modal-content1">
+              <h2 class="mb-0">Make Payment <br /><span>₪240.00 ils</span></h2>
+              <div class="license-amount">
+                <p class="text-center text-uppercase mb-0 mt-1">License Amount</p>
+                <div class="licence-counter" id="counter">
+                  <button class="decrement" id="decrement">-</button>
+                  <span class="count" id="count">0</span>
+                  <button class="increment" id="increment">+</button>
+                </div>
+                <div class="modal-auto-renew">
+                  <span>Auto Renew</span>
+                  <div class="form-check form-switch toggle-switch">
+                    <div class="checkbox-switch">
+                      <label>
+                        <input type="checkbox" class="form-check-input toggle-switch-input">
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <label class="form-check-label toggle-switch-label">off</label>
+                  </div>
+                </div>
+                <form action="/" class="uig-mb-25">
+                  <label class="payment-label">Select Billing Profile</label>
+                  <div class="payment-dropdown wp-dropdown">
+                    <select name="payment-dropdown3">
+                      <option value="default">Use default</option>
+                      <option value="2">-</option>
+                      <option value="3">-</option>
+                      <option value="4">-</option>
+                    </select>
+                  </div>
+
+                  <label class="payment-label">Select desire Method</label>
+                  <div class="radio-btn">
+                    <div class="radio-circle">
+                      <input
+                        type="radio"
+                        name="select-payment"
+                        id="payment-radio"
+                        class="custom-radio"
+                        checked
+                      />
+                      <label for="payment-radio" class="custom-label">
+                        <p>Credit Card</p>
+                        <span class="custom-label-img">
+                          <img src="./assets/images/icon/visa.png" alt="icon" />
+                          <img src="./assets/images/icon/mc.png" alt="icon" />
+                          <img src="./assets/images/icon/ae.png" alt="icon" />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="radio-btn">
+                    <div class="radio-circle">
+                      <input
+                        type="radio"
+                        name="select-payment"
+                        id="payment-radio2"
+                        class="custom-radio"
+                      />
+                      <label for="payment-radio2" class="custom-label">
+                        <p>PayPal</p>
+                        <span class="custom-label-img">
+                          <img src="./assets/images/icon/pp.png" alt="icon" />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="radio-btn">
+                    <div class="radio-circle">
+                      <input
+                        type="radio"
+                        name="select-payment"
+                        id="payment-radio3"
+                        class="custom-radio"
+                      />
+                      <label for="payment-radio3" class="custom-label">
+                        <p>Crypto <span>(SOON)</span></p>
+                        <span class="custom-label-img">
+                          <img
+                            src="./assets/images/icon/crypto.png"
+                            alt="icon"
+                          />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="radio-btn">
+                    <div class="radio-circle">
+                      <input
+                        type="radio"
+                        name="select-payment"
+                        id="payment-radio4"
+                        class="custom-radio"
+                      />
+                      <label for="payment-radio4" class="custom-label">
+                        <p>Account Credit (₪256.52)</p>
+                        <a href="#">Add Credit</a>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button
+                type="button"
+                class="modal-primary-btn"
+                id="complete-payment-btn"
+              >
+                Complete Payment
+              </button>
+            </div>
+
+            <div class="payment-modal-content payment-modal-content2">
+              <h2>Pay now ₪240.00 ils</h2>
+              <div class="card-img">
+                <img src="./assets/images/visa-card-img.png" alt="img" />
+              </div>
+
+              <label class="payment-label">CARD number</label>
+              <input class="custom-input mb-3" type="text" placeholder="5896" />
+
+              <label class="payment-label">Name</label>
+              <input
+                class="custom-input mb-3"
+                type="text"
+                placeholder="ROGET"
+              />
+
+              <div class="row pb-3">
+                <div class="col-sm-6">
+                  <label class="payment-label">Expires</label>
+                  <input
+                    class="custom-input mb-3"
+                    type="text"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <label class="payment-label">Name</label>
+                  <input
+                    class="custom-input mb-3"
+                    type="text"
+                    placeholder="000"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="modal-primary-btn confirm-payment-button"
+                id="confirm-payment-btn"
+              >
+                Confirm Payment
+              </button>
+            </div>
+
+            <div class="payment-modal-content payment-modal-content3">
+              <div class="payment-modal-content3-inner">
+                <div class="processing">
+                  <img
+                    src="./assets/images/icon/processing.png"
+                    alt="icon"
+                    class="processing-img"
+                  />
+                  <p>Processing</p>
+                </div>
+                <div class="success-content">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <div class="success-img">
+                    <img src="./assets/images/icon/check.png" alt="icon" />
+                  </div>
+                  <p>2000 sms credit charge success</p>
+                </div>
+                <div class="error-content">
+                  <button type="button" data-dismiss="modal">x</button>
+                  <div class="error-img">
+                    <img src="./assets/images/icon/close.png" alt="icon" />
+                  </div>
+                  <p>transetion Failed, Invalid Informetion</p>
+                  <a href="#">Try Again</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.3.1 js -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+
+    <!-- custon js -->
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+      const toggleSwitches = document.querySelectorAll(".toggle-switch-input");
+      const labels = document.querySelectorAll(".toggle-switch-label");
+
+      toggleSwitches.forEach((toggleSwitch, index) => {
+        toggleSwitch.addEventListener("change", function () {
+          const label = labels[index];
+          label.textContent = this.checked ? "on" : "off";
+          label.classList.toggle("on", this.checked);
+        });
+      });
+    </script>
+
+    <script>
+      const copyContainers = document.querySelectorAll(".copy");
+
+      copyContainers.forEach((copyContainer) => {
+        const copyText =
+          copyContainer.previousElementSibling.textContent.trim();
+        const copyIcon = copyContainer.querySelector(".copy-icon");
+        const checkIcon = copyContainer.querySelector(".check-icon");
+        const copiedMessage = copyContainer.querySelector(".copied-message");
+
+        copyIcon.addEventListener("click", () => {
+          // Create a temporary textarea to copy the text
+          const tempTextArea = document.createElement("textarea");
+          tempTextArea.value = copyText;
+          document.body.appendChild(tempTextArea);
+          tempTextArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempTextArea);
+
+          // Hide copy icon and show check icon
+          copyIcon.style.display = "none";
+          checkIcon.style.display = "inline";
+
+          // Show "Copied" message for 5 seconds
+          copiedMessage.style.display = "inline";
+
+          setTimeout(() => {
+            // Show copy icon and hide check icon
+            copyIcon.style.display = "inline";
+            checkIcon.style.display = "none";
+
+            // Hide "Copied" message
+            copiedMessage.style.display = "none";
+          }, 5000);
+        });
+      });
+    </script>
+
+    <script>
+      const clickButton = document.querySelector(".confirm-payment-button");
+      const processingSection = document.querySelector(".processing");
+      const successSection = document.querySelector(".success-content");
+
+      clickButton.addEventListener("click", () => {
+        processingSection.style.display = "block";
+
+        setTimeout(() => {
+          processingSection.style.display = "none";
+          successSection.style.display = "block";
+        }, 5000);
+      });
+    </script>
+
+    <script>
+      // Get the select elements
+      const creditguardSelect = document.getElementById("creditguard-select");
+      const tranzilaSelect = document.getElementById("tranzila-select");
+
+      // Get the span elements
+      const creditguardBasic = document.getElementById("creditguard-basic");
+      const creditguardAdvance = document.getElementById("creditguard-advance");
+      const creditguardPro = document.getElementById("creditguard-pro");
+      const tranzilaBasic = document.getElementById("tranzila-basic");
+      const tranzilaAdvance = document.getElementById("tranzila-advance");
+      const tranzilaPro = document.getElementById("tranzila-pro");
+
+      // Add event listeners to the select elements
+      creditguardSelect.addEventListener("change", handleSelectChange);
+      tranzilaSelect.addEventListener("change", handleSelectChange);
+
+      // Function to handle select change event
+      function handleSelectChange(event) {
+        const select = event.target;
+        const selectedOption = select.value;
+
+        // Determine which spans to show/hide based on the selected option
+        switch (select.id) {
+          case "creditguard-select":
+            creditguardBasic.style.display =
+              selectedOption === "default" ? "inline" : "none";
+            creditguardAdvance.style.display =
+              selectedOption === "advance" ? "inline" : "none";
+            creditguardPro.style.display =
+              selectedOption === "pro" ? "inline" : "none";
+            break;
+          case "tranzila-select":
+            tranzilaBasic.style.display =
+              selectedOption === "default" ? "inline" : "none";
+            tranzilaAdvance.style.display =
+              selectedOption === "advance" ? "inline" : "none";
+            tranzilaPro.style.display =
+              selectedOption === "pro" ? "inline" : "none";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+
+    <script>
+      const showMoreButtons = document.querySelectorAll(".show-more-button");
+
+      showMoreButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const pluginCard = this.closest(".wp-plugins-card");
+          const pluginCardText = pluginCard.querySelector(".plugin-card-text");
+          pluginCardText.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

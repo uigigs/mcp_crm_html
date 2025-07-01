@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP - CRM Dashboard</title>
+
+    <!-- favicon included here -->
+    <!-- <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon"> -->
+
+    <!-- apple touch icon included here -->
+    <!-- <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg"> -->
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- header section start -->
+  <header class="user-header-section">
+    <div class="header-left">
+      <div class="user-menu-button">
+        <button id="userMenuBtn" type="button" role="button" aria-label="Toggle sidebar menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo/logo.svg" alt="header logo" />
+      </a>
+    </div>
+    <div class="header-right">
+      <form action="/">
+        <!-- <label for="search-input1" class="m-0 visually-hidden">Search</label> -->
+        <button type="button" role="button">
+          <img src="./assets/images/icon/search.svg" alt="search" />
+        </button>
+        <input type="text" id="search-input1" placeholder="Search here..." />
+      </form>
+      <ul class="user-header-right-list">
+        <li>
+          <div class="language-dropdown dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="language dropdown menu">
+              <span class="iconify" data-icon="ph:globe"></span>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">עִברִית</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#">简体中文</a></li>
+              <li><a class="dropdown-item" href="#">Italiano</a></li>
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+            </ol>
+          </div>
+        </li>
+        <li class="notification">
+          <a href="#">
+            <img src="./assets/images/icon/notification.svg" alt="notification" />
+          </a>
+        </li>
+        <li>
+          <div class="avater-menu-dropdown dropdown">
+            <a class="dropdown-toggle dropdown-tigger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="user-menu-avater">
+                <img src="./assets/images/avaters/avater.png" alt="user avatar" />
+              </div>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+            </ol>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- header section End -->
+
+  <!-- side-menu start -->
+  <section class="side-menu active" id="sideMenu">
+    <div class="side-menu-inner">
+      <div class="side-menu-list">
+        <div class="mobile-menu-top">
+          <div class="notificationa-and-language">
+            <div class="language-dropdown dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span
+                  class="iconify" data-icon="ph:globe" aria-label="language dropdown menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">עִברִית</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                <li><a class="dropdown-item" href="#">简体中文</a></li>
+                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+              </ul>
+            </div>
+            <div class="notification">
+              <a href="#"><img src="./assets/images/icon/notification.svg" alt="icon" /></a>
+            </div>
+          </div>
+
+          <form action="/">
+            <!-- <label for="search-input2" class="m-0 visually-hidden">Search</label> -->
+            <button type="button" role="button">
+              <img src="./assets/images/icon/search.svg" alt="search" />
+            </button>
+            <input type="text" id="search-input2" placeholder="Search here..." />
+          </form>
+        </div>
+        <a href="#">
+          <img src="./assets/images/icon/home.svg" alt="Dashboard icon" />
+          <span>Dashboard</span>
+        </a>
+
+        <div class="panel-group" id="accordionMenuExample">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseOne"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/people.svg" alt="my account icon" />
+                  <span>My Account</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseTwo"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/domain.svg" alt="domain icon" />
+                  <span>Domain</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseThree"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketing.svg" alt="Marketing Tools icon" />
+                  <span>Marketing Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFour"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/network.svg" alt="Network Tools icon" />
+                  <span>Network Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFive"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketplace.svg" alt="Marketplace icon" />
+                  <span>Marketplace</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body pr-0 pt-2">
+                <div class="panel-group" id="accordionSubmenuMenuExample">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionSubmenuMenuExample"
+                          href="#menu-collapseSubmenuFive" aria-expanded="false" class="collapsed accordion-btn">
+                          Code
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="menu-collapseSubmenuFive" class="panel-collapse collapse" aria-expanded="false"
+                      style="height: 0px;">
+                      <div class="panel-body p-0">
+                        <ul>
+                          <li><a href="#">WP Plugins</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseSix"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/crm.svg" alt="CRM icon" />
+                  <span>CRM</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseSix" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <div class="submenu-list-content">
+                  <ul>
+                    <li>
+                      <a href="#" class="active">Dashboard</a>
+                      <a href="#">Customer</a>
+                      <a href="#">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <p>Maxstore Cloud Platforms <br />v0. 17. 1597-189</p>
+        <button class="side-menu-close-btn" id="sideMenuCloseBtn">
+          <img src="./assets/images/icon/dropdown-icon.svg" alt="sidebar close" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- side-menu End -->
+
+    <!-- user-body-section Start -->
+    <section class="user-body-section active uig-pt-115">
+        <div class="user-body-container">
+            <div class="dashboard-header">
+                <h2 class="page-title">CRM - Dashboard</h2>
+                <div class="dashboard-dropdown">
+                    <select>
+                        <option value="1">Company One</option>
+                    </select>
+                </div>
+            </div>
+            <!-- dashboard-content start -->
+            <div class="dashboard-content">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
+                        <div class="dashboard-top-card">
+                            <img src="./assets/images/icon/money-3.png" alt="icon">
+                            <h3>$896.23 <br><span>Payments - Today</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
+                        <div class="dashboard-top-card">
+                            <img src="./assets/images/icon/card-receive.png" alt="icon">
+                            <h3>$4530.05<br><span>Payments - Month</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
+                        <div class="dashboard-top-card">
+                            <img src="./assets/images/icon/receipt.png" alt="icon">
+                            <h3>$50.00 <br><span>Invoices - Due</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
+                        <div class="dashboard-top-card">
+                            <img src="./assets/images/icon/receipt-2.png" alt="icon">
+                            <h3>$1205.08<br><span>Invoices - Overdue</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 uig-mb-30">
+                        <div class="dashboard-card income-expenses">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Income and Expenses</h4>
+                                <div class="dashboard-dropdown">
+                                    <select>
+                                        <option value="1">This Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="income-cxpenses-graph">
+                                <div class="indecator-list-section">
+                                    <div class="indecator-list">
+                                        <div class="indecator blue">
+                                            <p>Income</p>
+                                        </div>
+                                        <div class="indecator orange">
+                                            <p>Expenses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="value-list">
+                                    <ul>
+                                        <li><span>$2000</span></li>
+                                        <li><span>$1500</span></li>
+                                        <li><span>$1000</span></li>
+                                        <li><span>$500</span></li>
+                                        <li><span>0</span></li>
+                                    </ul>
+                                </div>
+                                <div class="month-list">
+                                    <ul>
+                                        <li><span>Jan</span></li>
+                                        <li><span>Feb</span></li>
+                                        <li><span>Mar</span></li>
+                                        <li><span>Apr</span></li>
+                                        <li><span>May</span></li>
+                                        <li><span>Jun</span></li>
+                                        <li><span>Jul</span></li>
+                                        <li><span>Aug</span></li>
+                                        <li><span>Sep</span></li>
+                                        <li><span>Oct</span></li>
+                                        <li><span>Nov</span></li>
+                                        <li><span>Dec</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 uig-mb-30">
+                        <div class="dashboard-card leads">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Leads</h4>
+                                <div class="dashboard-dropdown">
+                                    <select>
+                                        <option value="1">This Month</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="leads-inner">
+                                <div class="leads-piechart">
+                                    <img src="./assets/images/crm/leads-chart.png" alt="pic-chart">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="indecator red">
+                                            <p>Disqualified</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator blue">
+                                            <p>Qualified</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator orange">
+                                            <p>Contacted</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator green">
+                                            <p>Converted</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator till">
+                                            <p>Proposal Sent</p>
+                                        </div>
+                                    </li>
+                                    <li><span>+ New</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 uig-mb-30">
+                        <div class="dashboard-card invoice">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Invoice Overview</h4>
+                                <div class="dashboard-dropdown">
+                                    <select>
+                                        <option value="1">This Month</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="invoice-card-content">
+                                <h6>Total invoiced</h6>
+                                <h5>$28,256.50</h5>
+                                <div class="invoice-list">
+                                    <ul>
+                                        <li>
+                                            <div class="indecator red">
+                                                <p>invoice-list</p>
+                                            </div>
+                                            <div class="invoice-progress">
+                                                <div class="invoice-progress-inner red w60"></div>
+                                            </div> <span>$25,256.30 </span>
+                                        </li>
+                                        <li>
+                                            <div class="indecator orange">
+                                                <p>Not Paid (45)</p>
+                                            </div>
+                                            <div class="invoice-progress">
+                                                <div class="invoice-progress-inner orange w40"></div>
+                                            </div> <span>$1,785.00</span>
+                                        </li>
+                                        <li>
+                                            <div class="indecator blue">
+                                                <p>Partially Paid (13)</p>
+                                            </div>
+                                            <div class="invoice-progress">
+                                                <div class="invoice-progress-inner blue w25"></div>
+                                            </div> <span>$869.55</span>
+                                        </li>
+                                        <li>
+                                            <div class="indecator green">
+                                                <p>Fully Paid (5)</p>
+                                            </div>
+                                            <div class="invoice-progress">
+                                                <div class="invoice-progress-inner green w70"></div>
+                                            </div> <span>$12,633.50</span>
+                                        </li>
+                                        <li>
+                                            <div class="indecator gray">
+                                                <p>Draft (0)</p>
+                                            </div>
+                                            <div class="invoice-progress">
+                                                <div class="invoice-progress-inner gray w0"></div>
+                                            </div> <span>$12,633.50</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 uig-mb-30">
+                        <div class="dashboard-card ticket-status">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Ticket Status</h4>
+                                <div class="dashboard-dropdown">
+                                    <select>
+                                        <option value="1">This Week</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ticket-card-content">
+                                <div class="row">
+                                    <div class="col-md-6 uig-mb-20">
+                                        <div class="ticket-inner-card">
+                                            <div class="indecator red"><p>New (13)</p></div>
+                                            <div class="indecator blue"><p>Open (24)</p></div>
+                                            <div class="indecator green"><p>Closed (89)</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 uig-mb-20">
+                                        <div class="ticket-inner-card">
+                                            <p>General (105)</p>
+                                            <p>Sale Inquiry (22)</p>
+                                            <p>Bug Reports (8)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket-list">
+                                    <ul>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height15"></span>
+                                                <span class="blue height12"></span>
+                                                <span class="green height30"></span>
+                                            </div>
+                                            <p>Mo</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height5"></span>
+                                                <span class="blue height15"></span>
+                                                <span class="green height40"></span>
+                                            </div>
+                                            <p>Tu</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height8"></span>
+                                                <span class="blue height25"></span>
+                                                <span class="green height60"></span>
+                                            </div>
+                                            <p>Tu</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height18"></span>
+                                                <span class="blue height11"></span>
+                                                <span class="green height40"></span>
+                                            </div>
+                                            <p>Th</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height6"></span>
+                                                <span class="blue height25"></span>
+                                                <span class="green height20"></span>
+                                            </div>
+                                            <p>Fr</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height4"></span>
+                                                <span class="blue height12"></span>
+                                                <span class="green height60"></span>
+                                            </div>
+                                            <p>Sa</p>
+                                        </li>
+                                        <li>
+                                            <div class="ticket-bars">
+                                                <span class="red height13"></span>
+                                                <span class="blue height8"></span>
+                                                <span class="green height20"></span>
+                                            </div>
+                                            <p>Su</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 uig-mb-30">
+                        <div class="dashboard-note-card">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Sticky Note (Private) 56</h4>
+                                <div class="note-drawer">
+                                    <button class="btn note-open-btn toggle-drawer-button" type="button"><span class="iconify" data-icon="ic:baseline-plus"></span></button>
+
+                                    <div class="overlay"></div>
+                                    <div class="custom-drawer offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Create Note</h5>
+                                            <button type="button" class="btn-close note-close-btn close-drawer-button" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"><img src="./assets/images/icon/close-drawer.png" alt="icon"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="write-note-section">
+                                                <ul>
+                                                    <li><button class="note-color-change brown"></button></li>
+                                                    <li><button class="note-color-change active pink"></button></li>
+                                                    <li><button class="note-color-change violate"></button></li>
+                                                    <li><button class="note-color-change till"></button></li>
+                                                    <li><button class="note-color-change offwhite"></button></li>
+                                                </ul>
+                                                <div class="write-note-content">
+                                                    <div class="write-note-card pink">
+                                                        <textarea placeholder="Here is your note"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="note-card-content">
+                                <div class="note-body brown">
+                                    <h6 class="note-date">22 May, 2023</h6>
+                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                </div>
+                                <div class="note-body pink">
+                                    <h6 class="note-date">30 June, 2023</h6>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure ....</p>
+                                </div>
+                                <div class="note-body oliv">
+                                    <h6 class="note-date">22 July, 2023</h6>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure ....</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="dashboard-calender-card uig-mb-30">
+                            <div class="dashboard-calender-card-inner">
+                                <div class="dashboard-calender-left">
+                                    <div class="notification-icon">
+                                        <img src="./assets/images/icon/bell.png" alt="icon">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p><span>3</span>Reminder Today</p>
+                                        <a href="#">+ Add Reminder</a>
+                                    </div>
+                                </div>
+                                <div class="dashboard-calender-center">
+                                    <div class="remainder-card">
+                                        <h6>Meeting with Roe</h6>
+                                        <p>Prototype discussion </p>
+                                        <p><img src="./assets/images/icon/clock.svg" alt="icon"><span>02 PM - 03.30 PM</span><img src="./assets/images/icon/bell.svg" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="dashboard-calender-right">
+                                    <ul>
+                                        <li><span class="date">02</span> <span>Tu</span></li>
+                                        <li><span class="date">03</span> <span>We</span></li>
+                                        <li><span class="date">04</span> <span>Th</span></li>
+                                        <li class="active"><span class="date">05</span> <span>Fr</span></li>
+                                        <li><span class="date">06</span> <span>Sa</span></li>
+                                        <li><span class="date">07</span> <span>Su</span></li>
+                                        <li><span class="date">08</span> <span>Mo</span></li>
+                                        <li><span class="date">09</span> <span>Tu</span></li>
+                                        <li><span class="date">10</span> <span>We</span></li>
+                                        <li><span class="date">11</span> <span>Th</span></li>
+                                        <li><span class="date">12</span> <span>Fr</span></li>
+                                        <li><span class="date">13</span> <span>Sa</span></li>
+                                        <li><span class="date">14</span> <span>Su</span></li>
+                                        <li><span class="date">15</span> <span>Mo</span></li>
+                                        <li><span class="date">16</span> <span>Tu</span></li>
+                                        <li><span class="date">17</span> <span>We</span></li>
+                                        <li><span class="date">18</span> <span>Th</span></li>
+                                        <li><span class="date">19</span> <span>Fr</span></li>
+                                        <li><span class="date">20</span> <span>Sa</span></li>
+                                        <li><span class="date">21</span> <span>Su</span></li>
+                                        <li><span class="date">22</span> <span>Mo</span></li>
+                                        <li><span class="date">23</span> <span>Tu</span></li>
+                                        <li><span class="date">24</span> <span>We</span></li>
+                                        <li><span class="date">25</span> <span>Th</span></li>
+                                        <li><span class="date">26</span> <span>Fr</span></li>
+                                        <li><span class="date">27</span> <span>Sa</span></li>
+                                        <li><span class="date">28</span> <span>Su</span></li>
+                                        <li><span class="date">29</span> <span>Mo</span></li>
+                                        <li><span class="date">30</span> <span>Tu</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 uig-mb-30">
+                                <div class="dashboard-card">
+                                    <div class="dashboard-card-header">
+                                        <h4 class="card-title">Team Member Overview</h4>
+                                    </div>
+                                    <div class="team-overview-body">
+                                        <ul>
+                                            <li>
+                                                <h6 class="text-blue">26</h6>
+                                                <p>Team Members</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-red">2</h6>
+                                                <p>On Leave Today</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-green">8</h6>
+                                                <p>Members Clocked in</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-orange">13</h6>
+                                                <p>Members Clocked Out</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 uig-mb-30">
+                                <div class="dashboard-card">
+                                    <div class="dashboard-card-header">
+                                        <h4 class="card-title">Projects Overview</h4>
+                                    </div>
+                                    <div class="project-overview-body">
+                                        <ul>
+                                            <li>
+                                                <h6 class="text-blue">16</h6>
+                                                <p>Open</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-green">6</h6>
+                                                <p>Completed</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-orange">8</h6>
+                                                <p>Hold</p>
+                                            </li>
+                                        </ul>
+                                        <div class="project-progress-section">
+                                            <p>Progression 36%</p>
+                                            <div class="project-progress">
+                                                <div class="project-progress-inner w36"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 uig-mb-30">
+                        <div class="dashboard-card customer">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">Customer</h4>
+                            </div>
+                            <div class="customer-inner">
+                                <div class="customer-piechart">
+                                    <img src="./assets/images/crm/customer-chart.png" alt="pic-chart">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="indecator green">
+                                            <p>Active  (156)</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator red">
+                                            <p>Close  (24)</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator blue">
+                                            <p>Inactive  (26)</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="indecator orange">
+                                            <p>Pending (8)</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 uig-mb-30">
+                        <div class="my-tasks-card">
+                            <div class="dashboard-card-header my-tasks-card-header">
+                                <h4 class="card-title">My Tasks</h4>
+                            </div>
+                            <div class="my-task-content">
+                                <div class="task-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Title</th>
+                                                <th>Start date</th>
+                                                <th>Deadline</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox1" />
+                                                        <label for="checkbox1">#23</label>
+                                                    </div>
+                                                </td>
+                                                <td>Webpage design for Viviro</td>
+                                                <td><button class="setup">Setup</button> 05 Jan, 2023</td>
+                                                <td>28 Aug, 2023</td>
+                                                <td>To do</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox2"/>
+                                                        <label for="checkbox2">#06</label>
+                                                    </div>
+                                                </td>
+                                                <td>Network tools API</td>
+                                                <td><span><img src="./assets/images/crm/top.svg" alt="icon"> Major</span><button class="design">Design</button> 13 Feb, 2023</td>
+                                                <td>03 May, 2023</td>
+                                                <td>In Progress</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox3"/>
+                                                        <label for="checkbox3">#18</label>
+                                                    </div>
+                                                </td>
+                                                <td>Plugin Installation</td>
+                                                <td><span><img src="./assets/images/crm/top.svg" alt="icon"> Major</span>-</td>
+                                                <td>-</td>
+                                                <td>In Progress</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox4"/>
+                                                        <label for="checkbox4">#16</label>
+                                                    </div>
+                                                </td>
+                                                <td>Responsive Design check</td>
+                                                <td><button class="setup">Setup</button> 14 Mar, 2023</td>
+                                                <td>-</td>
+                                                <td>To do</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox5"/>
+                                                        <label for="checkbox5">#22</label>
+                                                    </div>
+                                                </td>
+                                                <td>UI Design (MCP)</td>
+                                                <td><span><img src="./assets/images/crm/info.svg" alt="icon">Critical</span>30 May, 2023</td>
+                                                <td>16 Sep, 2023</td>
+                                                <td>In Progress</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 uig-mb-30">
+                        <div class="dashboard-card task">
+                            <div class="dashboard-card-header">
+                                <h4 class="card-title">All Tasks Overview</h4>
+                            </div>
+                            <div class="task-card-content">
+                                <div class="task-img">
+                                    <img src="./assets/images/crm/task-charts.png" alt="img">
+                                </div>
+                                <div class="all-task-data">
+                                    <ul>
+                                        <li>
+                                            <div class="indecator blue">
+                                                <p>To do (16)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="indecator red">
+                                                <p>In Progress (8)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="indecator orange">
+                                                <p>Review (6)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="indecator green">
+                                                <p>Done (56)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- user-body-section End -->
+
+
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.3.1 js -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+
+    <!-- custon js -->
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        const toggleSwitches = document.querySelectorAll('.toggle-switch-input');
+        const labels = document.querySelectorAll('.toggle-switch-label');
+
+        toggleSwitches.forEach((toggleSwitch, index) => {
+            toggleSwitch.addEventListener('change', function () {
+                const label = labels[index];
+                label.textContent = this.checked ? 'on' : 'off';
+                label.classList.toggle('on', this.checked);
+            });
+        });
+    </script>
+
+    <script>
+        const copyContainers = document.querySelectorAll('.copy');
+
+        copyContainers.forEach(copyContainer => {
+            const copyText = copyContainer.previousElementSibling.textContent.trim();
+            const copyIcon = copyContainer.querySelector('.copy-icon');
+            const checkIcon = copyContainer.querySelector('.check-icon');
+            const copiedMessage = copyContainer.querySelector('.copied-message');
+
+            copyIcon.addEventListener('click', () => {
+                // Create a temporary textarea to copy the text
+                const tempTextArea = document.createElement('textarea');
+                tempTextArea.value = copyText;
+                document.body.appendChild(tempTextArea);
+                tempTextArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempTextArea);
+
+                // Hide copy icon and show check icon
+                copyIcon.style.display = 'none';
+                checkIcon.style.display = 'inline';
+
+                // Show "Copied" message for 5 seconds
+                copiedMessage.style.display = 'inline';
+
+                setTimeout(() => {
+                    // Show copy icon and hide check icon
+                    copyIcon.style.display = 'inline';
+                    checkIcon.style.display = 'none';
+
+                    // Hide "Copied" message
+                    copiedMessage.style.display = 'none';
+                }, 5000);
+            });
+        });
+    </script>
+
+    <script>
+        const clickButton = document.querySelector('.confirm-payment-button');
+        const processingSection = document.querySelector('.processing');
+        const successSection = document.querySelector('.success-content');
+
+        clickButton.addEventListener('click', () => {
+            processingSection.style.display = 'block';
+
+            setTimeout(() => {
+                processingSection.style.display = 'none';
+                successSection.style.display = 'block';
+            }, 5000);
+        });
+    </script>
+
+    <script>
+        // Get the select elements
+        const creditguardSelect = document.getElementById('creditguard-select');
+        const tranzilaSelect = document.getElementById('tranzila-select');
+
+        // Get the span elements
+        const creditguardBasic = document.getElementById('creditguard-basic');
+        const creditguardAdvance = document.getElementById('creditguard-advance');
+        const creditguardPro = document.getElementById('creditguard-pro');
+        const tranzilaBasic = document.getElementById('tranzila-basic');
+        const tranzilaAdvance = document.getElementById('tranzila-advance');
+        const tranzilaPro = document.getElementById('tranzila-pro');
+
+        // Add event listeners to the select elements
+        creditguardSelect.addEventListener('change', handleSelectChange);
+        tranzilaSelect.addEventListener('change', handleSelectChange);
+
+        // Function to handle select change event
+        function handleSelectChange(event) {
+            const select = event.target;
+            const selectedOption = select.value;
+
+            // Determine which spans to show/hide based on the selected option
+            switch (select.id) {
+                case 'creditguard-select':
+                    creditguardBasic.style.display = selectedOption === 'default' ? 'inline' : 'none';
+                    creditguardAdvance.style.display = selectedOption === 'advance' ? 'inline' : 'none';
+                    creditguardPro.style.display = selectedOption === 'pro' ? 'inline' : 'none';
+                    break;
+                case 'tranzila-select':
+                    tranzilaBasic.style.display = selectedOption === 'default' ? 'inline' : 'none';
+                    tranzilaAdvance.style.display = selectedOption === 'advance' ? 'inline' : 'none';
+                    tranzilaPro.style.display = selectedOption === 'pro' ? 'inline' : 'none';
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    </script>
+
+    <script>
+        const showMoreButtons = document.querySelectorAll('.show-more-button');
+
+        showMoreButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const pluginCard = this.closest('.wp-plugins-card');
+                const pluginCardText = pluginCard.querySelector('.plugin-card-text');
+                pluginCardText.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+<!-- Assuming you have the HTML structure as provided in the question -->
+
+<script>
+    // Get all the buttons with class "note-color-change"
+    const colorButtons = document.querySelectorAll('.note-color-change');
+
+    // Get the "write-note-card" element
+    const writeNoteCard = document.querySelector('.write-note-card');
+
+    // Function to handle button click
+    function handleButtonClick(event) {
+        const button = event.target;
+        const colorClass = button.classList[1]; // The color class name is the second class of the button
+
+        // Remove "active" class from all buttons
+        colorButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Add "active" class to the clicked button
+        button.classList.add('active');
+
+        // Clear existing color classes from "write-note-card"
+        writeNoteCard.className = 'write-note-card';
+
+        // Add the clicked color class to "write-note-card"
+        writeNoteCard.classList.add(colorClass);
+    }
+
+    // Add click event listener to each button
+    colorButtons.forEach(button => button.addEventListener('click', handleButtonClick));
+</script>
+
+<script>
+    $(document).ready(function () {
+      // Function to open the custom drawer
+      $(".toggle-drawer-button").click(function () {
+        $(".custom-drawer").toggleClass("active");
+        $(".overlay").toggleClass("active");
+      });
+
+      // Function to close the custom drawer
+      $(".close-drawer-button").click(function () {
+        $(".custom-drawer").removeClass("active");
+        $(".overlay").removeClass("active");
+      });
+
+      // Close the drawer when the overlay is clicked
+      $(".overlay").click(function () {
+        $(".custom-drawer").removeClass("active");
+        $(".overlay").removeClass("active");
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

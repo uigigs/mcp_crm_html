@@ -1,0 +1,214 @@
+.custom-field-tab-btns {
+    padding: 30px 30px 0px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+    .nav-pills {
+        gap: 40px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: -40px;
+
+        .nav-link {
+            background: transparent;
+            color: #444;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 0px;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 10px;
+            border-radius: 0px;
+            outline: none !important;
+        }
+
+        li {
+            &.active {
+                .nav-link {
+                    color: #35B7F3;
+                    background: transparent !important;
+                    border-bottom: 2px solid #35B7F3;
+                }
+            }
+        }
+    }
+}
+
+.simple-text-content {
+    padding: 30px;
+
+    h2 {
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .save-btn {
+        border-radius: 10px;
+        background: #35B7F3;
+        height: 50px;
+        max-width: 270px;
+        width: 100%;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+}
+
+.simple-text-accordion-item {
+    border-radius: 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: #F5F5F5;
+    padding: 15px;
+    overflow: hidden !important;
+    margin-bottom: 15px !important;
+
+    .panel-heading {
+        padding: 0px !important;
+    }
+
+    .accordion-button {
+        background: transparent;
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+
+        &::after {
+            display: none;
+        }
+
+        &:not(.collapsed),
+        &:hover {
+            .setting-icon {
+                filter: none;
+            }
+        }
+
+        .setting-icon {
+            transition: 0.3s;
+            background: transparent !important;
+            filter: grayscale(100%) brightness(0.9);
+
+            &::before {
+                display: none !important;
+            }
+
+            &::after {
+                display: none !important
+            }
+        }
+
+        .accordion-btn:not(.collapsed) {
+            filter: none !important;
+        }
+
+        input {
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background: #FFF;
+            outline: none;
+            padding: 10px 15px;
+            height: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #111111;
+            max-width: 470px;
+            width: 100%;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+    }
+}
+
+.accordion-button-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+    margin-left: auto;
+
+    img {
+        min-width: 20px;
+    }
+}
+
+.custom-feild-accordion-body {
+    padding: 0px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+
+        li {
+            width: 33.33%;
+            margin-top: 18px;
+
+            &.status {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+
+            button {
+                border-radius: 5px;
+                background: #E34545;
+                color: #FFF;
+                text-align: center;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 184.615%;
+                padding: 0.5px 12px;
+            }
+        }
+
+        .crm-checkbox {
+            padding-left: 30px;
+            padding-right: 0px;
+        }
+
+        .checkmark {
+            left: 0px;
+            right: auto;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .custom-feild-accordion-body {
+        ul {
+            li {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .simple-text-content{
+        padding: 15px;
+    }
+    .custom-feild-accordion-body {
+        ul {
+            li {
+                width: 100%;
+            }
+        }
+    }
+    
+}
