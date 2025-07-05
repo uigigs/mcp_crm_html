@@ -173,6 +173,9 @@
     overflow-x: scroll;
     overflow-y: visible;
     min-height: 65px;
+    &.order-summary-tabs{
+        justify-content: flex-start;
+    }
 
     .tab-link {
         border: none;

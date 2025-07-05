@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP - CRM Clients Order details</title>
+
+  <!-- favicon included here -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon"> -->
+
+  <!-- apple touch icon included here -->
+  <!-- <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg"> -->
+
+  <!-- All css files included here -->
+  <!-- Bootstrap  v5.2.1 css -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+  <!-- intlTelInput -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+  <!-- header section start -->
+  <header class="user-header-section">
+    <div class="header-left">
+      <div class="user-menu-button">
+        <button id="userMenuBtn" type="button" role="button" aria-label="Toggle sidebar menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo/logo.svg" alt="header logo" />
+      </a>
+    </div>
+    <div class="header-right">
+      <form action="/">
+        <!-- <label for="search-input1" class="m-0 visually-hidden">Search</label> -->
+        <button type="button" role="button">
+          <img src="./assets/images/icon/search.svg" alt="search" />
+        </button>
+        <input type="text" id="search-input1" placeholder="Search here..." />
+      </form>
+      <ul class="user-header-right-list">
+        <li>
+          <div class="language-dropdown dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="language dropdown menu">
+              <span class="iconify" data-icon="ph:globe"></span>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">עִברִית</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#">简体中文</a></li>
+              <li><a class="dropdown-item" href="#">Italiano</a></li>
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+            </ol>
+          </div>
+        </li>
+        <li class="notification">
+          <a href="#">
+            <img src="./assets/images/icon/notification.svg" alt="notification" />
+          </a>
+        </li>
+        <li>
+          <div class="avater-menu-dropdown dropdown">
+            <a class="dropdown-toggle dropdown-tigger" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="user-menu-avater">
+                <img src="./assets/images/avaters/avater.png" alt="user avatar" />
+              </div>
+            </a>
+            <ol class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">-</a></li>
+            </ol>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- header section End -->
+
+  <!-- side-menu start -->
+  <section class="side-menu active" id="sideMenu">
+    <div class="side-menu-inner">
+      <div class="side-menu-list">
+        <div class="mobile-menu-top">
+          <div class="notificationa-and-language">
+            <div class="language-dropdown dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><span
+                  class="iconify" data-icon="ph:globe" aria-label="language dropdown menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">עִברִית</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                <li><a class="dropdown-item" href="#">简体中文</a></li>
+                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+              </ul>
+            </div>
+            <div class="notification">
+              <a href="#"><img src="./assets/images/icon/notification.svg" alt="icon" /></a>
+            </div>
+          </div>
+
+          <form action="/">
+            <!-- <label for="search-input2" class="m-0 visually-hidden">Search</label> -->
+            <button type="button" role="button">
+              <img src="./assets/images/icon/search.svg" alt="search" />
+            </button>
+            <input type="text" id="search-input2" placeholder="Search here..." />
+          </form>
+        </div>
+        <a href="#">
+          <img src="./assets/images/icon/home.svg" alt="Dashboard icon" />
+          <span>Dashboard</span>
+        </a>
+
+        <div class="panel-group" id="accordionMenuExample">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseOne"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/people.svg" alt="my account icon" />
+                  <span>My Account</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseTwo"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/domain.svg" alt="domain icon" />
+                  <span>Domain</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseThree"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketing.svg" alt="Marketing Tools icon" />
+                  <span>Marketing Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFour"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/network.svg" alt="Network Tools icon" />
+                  <span>Network Tools</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseFive"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/marketplace.svg" alt="Marketplace icon" />
+                  <span>Marketplace</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseFive" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body pr-0 pt-2">
+                <div class="panel-group" id="accordionSubmenuMenuExample">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionSubmenuMenuExample"
+                          href="#menu-collapseSubmenuFive" aria-expanded="false" class="collapsed accordion-btn">
+                          Code
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="menu-collapseSubmenuFive" class="panel-collapse collapse" aria-expanded="false"
+                      style="height: 0px;">
+                      <div class="panel-body p-0">
+                        <ul>
+                          <li><a href="#">WP Plugins</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionMenuExample" href="#menu-collapseSix"
+                  aria-expanded="false" class="collapsed accordion-btn">
+                  <img src="./assets/images/icon/crm.svg" alt="CRM icon" />
+                  <span>CRM</span>
+                </a>
+              </h2>
+            </div>
+            <div id="menu-collapseSix" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <div class="submenu-list-content">
+                  <ul>
+                    <li>
+                      <a href="#" class="active">Dashboard</a>
+                      <a href="#">Customer</a>
+                      <a href="#">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <p>Maxstore Cloud Platforms <br />v0. 17. 1597-189</p>
+        <button class="side-menu-close-btn" id="sideMenuCloseBtn">
+          <img src="./assets/images/icon/dropdown-icon.svg" alt="sidebar close" />
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- side-menu End -->
+
+  <!-- user-body-section start -->
+  <section class="user-body-section active uig-pt-115">
+    <div class="user-body-container user-body-container-2">
+      <div class="top">
+        <a href="./customer.html" class="client-detail-back-icon">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
+              <path
+                d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM13 7L1 7V9L13 9V7Z"
+                fill="#999999" />
+            </svg>
+          </span> Back</a>
+
+        <div class="dashboard-dropdown">
+          <select>
+            <option value="1"><span>#4 </span> - Roe Shalom</option>
+            <option value="1"><span>#5 </span> - Victor Medeiros</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="clint-summary-card order-summary-card">
+        <div class="summary-card-header">
+          <div class="summary-card-header-top">
+            <div class="card-header-left">
+            <span>Order</span>
+            <h3>#56932</h3>
+            <h5 class="info"><img src="./assets/images/icon/info-orange.svg" alt="icon"> This is a draft order. The client
+              is not able to see or access the order until it is published</h5>
+          </div>
+          <div class="card-header-right">
+            <button><img src="./assets/images/icon/view.svg" alt="icon">View as Client</button>
+            <button><img src="./assets/images/icon/print.svg" alt="icon">Print</button>
+            <button><img src="./assets/images/icon/download-icon.svg" alt="icon">Download</button>
+          </div>
+          </div>
+          <ul class="nav nav-tabs client-summary-tabs order-summary-tabs">
+            <li class="tab-link min-w-max-content active"><a data-toggle="tab" href="#summary">Summary</a></li>
+            <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#addPayment">Add Payment</a></li>
+            <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#options">Options</a></li>
+            <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#credit">Credit</a></li>
+            <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#refund">Refund</a></li>
+            <li class="tab-link min-w-max-content "><a data-toggle="tab" href="#order">Notes</a></li>
+          </ul>
+        </div>
+        <div class="summary-card-body">
+          <div class="tab-content">
+            <div id="summary" class="tab-pane fade in active">
+              <div class="order-summary-content">
+                <div class="order-detail-card">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="order-summary-left">
+                        <ul>
+                          <li><span>Client Name:</span> <strong>Roe Shalom</strong></li>
+                          <li><span>Order Date:</span> <strong>24 Jan, 2025</strong></li>
+                          <li><span>Due Date:</span> <strong>25 Feb, 2025</strong></li>
+                          <li><span>Total Due:</span> <strong>₪87.00</strong></li>
+                          <li><span>Balance:</span> <strong class="success">₪00.00</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="order-summary-right">
+                        <h5>Draft</h5>
+                        <p>Payment Method: No Transactions Applied</p>
+                        <form action="#">
+                          <div class="draft-content">
+                            <div class="draft-dropdown">
+                              <select name="" id="">
+                                <option value="">Order Created</option>
+                                <option value="">-</option>
+                              </select>
+                            </div>
+                            <button>Send Email</button>
+                          </div>
+                          <div class="draft-btns">
+                            <button class="active">Attempt Capture</button>
+                            <button>Mark Cancelled</button>
+                            <button>Mark Unpaid</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-publish-btns">
+                    <button class="active">Publish</button>
+                    <button>Publish and Send mail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="addPayment" class="tab-pane fade">
+              <div class="payment-card">
+                <form action="">
+                  <div class="form-content">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Date</label>
+                          <div class="input-fild date">
+                            <input type="date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Amount</label>
+                          <div class="input-fild">
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Payment Method</label>
+                          <div class="input-select">
+                            <select name="" id="">
+                              <option value="">Credit Card</option>
+                              <option value="">Bank Transfer</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Transaction Fees</label>
+                          <div class="input-fild">
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Transaction Id</label>
+                          <div class="input-fild">
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Send Email</label>
+                          <div class="input-checkbox">
+                            <input type="checkbox">
+                            <span>Tick to Send Confirmation Email</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Add Payment</button>
+                </form>
+              </div>
+            </div>
+            <div id="options" class="tab-pane fade">
+              <div class="payment-card">
+                <form action="">
+                  <div class="form-content">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Order Date</label>
+                          <div class="input-fild date">
+                            <input type="date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Due Date</label>
+                          <div class="input-fild date">
+                            <input type="date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Payment Method</label>
+                          <div class="input-select">
+                            <select name="" id="">
+                              <option value="">Credit Card</option>
+                              <option value="">Bank Transfer</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Status</label>
+                          <div class="input-select">
+                            <select name="" id="">
+                              <option value="">Draft</option>
+                              <option value="">Cancelled</option>
+                              <option value="">Paid</option>
+                              <option value="">Refunded</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Tax rate</label>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <div class="tax-rate">
+                                <span>1</span>
+                                <input type="text">
+                                <span>%</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-6">
+                              <div class="tax-rate">
+                                <span>1</span>
+                                <input type="text">
+                                <span>%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="order-form-input">
+                          <label for="">Order #</label>
+                          <div class="input-fild">
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Save Changes</button>
+                </form>
+              </div>
+            </div>
+            <div id="credit" class="tab-pane fade">
+              <div class="payment-card">
+                <form action="" class="credit-from">
+                  <div class="left">
+                    <label for="">Add Credit To Invoice</label>
+                    <div class="input-and-btn">
+                      <input type="text">
+                      <button>Go</button>
+                    </div>
+                    <p class="success">₪10.00 ILS Available</p>
+                  </div>
+                  <div class="right">
+                    <label for="">Remove Credit from Invoice</label>
+                    <div class="input-and-btn">
+                      <input type="text">
+                      <button>Go</button>
+                    </div>
+                    <p class="error">₪10.00 ILS Available</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="refund" class="tab-pane fade">
+              <div class="payment-card refund-card">
+                <form action="">
+                  <div class="form-content">
+                    <div class="order-form-input max-w-420">
+                      <label for="">Transactions</label>
+                      <div class="input-select">
+                        <select name="" id="">
+                          <option value="">No Transactions Applied to This Order Yet</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="order-form-input max-w-420">
+                      <label for="">Amount <span>Leave blank for full refund</span></label>
+                      <div class="input-fild">
+                        <input type="text">
+                      </div>
+                    </div>
+
+                    <div class="order-form-input max-w-420">
+                      <label for="">Refund Type</label>
+                      <div class="input-select">
+                        <select name="" id="">
+                          <option value="">Refund through Gateway (If supported by module)</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="order-form-input">
+                      <label for="">Reverse Payment</label>
+                      <div class="input-checkbox refund-checkbox">
+                        <input type="checkbox">
+                        <span>Undo automated actions triggered by this transaction - where possible</span>
+                      </div>
+                    </div>
+                    <div class="order-form-input">
+                      <label for="">Send email</label>
+                      <div class="input-checkbox refund-checkbox">
+                        <input type="checkbox">
+                        <span>Tick to Send Confirmation Email</span>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <button class="refund-btn">Refund</button>
+                </form>
+              </div>
+            </div>
+            <div id="order" class="tab-pane fade">
+              <div class="payment-card note-card">
+                <form action="">
+                  <div class="order-form-input">
+                    <label for="">Add Note</label>
+                    <textarea name="" id=""></textarea>
+
+                  </div>
+                  <button type="submit">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-item-card">
+            <h4>Order Items</h4>
+            <div class="order-item-table">
+              <form action="" class="">
+                <div class="table-head">
+                  <ul>
+                    <li>Description</li>
+                    <li>Amount</li>
+                    <li>Actions</li>
+                  </ul>
+                </div>
+                <div class="table-body">
+                  <ul>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="checkbox"></li>
+                  </ul>
+                </div>
+                <div class="table-body">
+                  <ul>
+                    <li>
+                      <div class="left">
+                        <div class="order-table-select">
+                          <select name="" id="">
+                            <option value="">With Selected</option>
+                            <option value="">-</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p><strong>Sub Total:</strong></p>
+                        <p>18.00% Tax:</p>
+                        <p>Credit:</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="price">
+                        <p><strong>₪0.00</strong></p>
+                        <p><strong>₪0.00</strong></p>
+                        <p><strong>₪0.00</strong></p>
+                      </div>
+                    </li>
+                    <li>&nbsp;</li>
+                  </ul>
+                </div>
+                <div class="table-body">
+                  <ul>
+                    <li>
+                      <div class="left">
+                        &nbsp;
+                      </div>
+                      <div class="right">
+                        <p><strong>Total Due:</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="price">
+                        <p><strong>₪0.00</strong></p>
+                      </div>
+                    </li>
+                    <li>&nbsp;</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="order-table-btns">
+              <button class="active">Save Changes</button>
+              <button>Cancel Changes</button>
+            </div>
+          </div>
+
+          <div class="tx-table-card">
+            <h4>Transactions</h4>
+            <div class="tx-table">
+              <ul class="table-head">
+                <li class="uppercase"><input type="checkbox"> <span>Date</span></li>
+                <li class="uppercase">Payment Method</li>
+                <li class="uppercase">Transaction ID</li>
+                <li class="uppercase">Amount</li>
+                <li class="uppercase">Transaction fees</li>
+                <li class="uppercase">Actions</li>
+              </ul>
+              <ul class="table-body">
+                <li><input type="checkbox"> <span>19/02/2025</span></li>
+                <li>Bank Transfer</li>
+                <li>#25632555</li>
+                <li>₪369.00</li>
+                <li>₪0.00</li>
+                <li>
+                  <div class="action">
+                    <button><img src="./assets/images/icon/edit.svg" alt="icon"></button>
+                    <button><img src="./assets/images/icon/delete.svg" alt="icon"></button>
+                  </div>
+                </li>
+              </ul>
+              <ul class="table-body">
+                <li><input type="checkbox"> <span>19/02/2025</span></li>
+                <li>Bank Transfer</li>
+                <li>#85223336</li>
+                <li>₪896.00</li>
+                <li>₪2.00</li>
+                <li>
+                  <div class="action">
+                    <button><img src="./assets/images/icon/edit.svg" alt="icon"></button>
+                    <button><img src="./assets/images/icon/delete.svg" alt="icon"></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- user-body-section End -->
+
+
+
+  <!-- All javascript files included here -->
+  <!-- jQuery v3.3.1 js -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap  v5.2.1 js -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Iconify v3.0.0 js -->
+  <script src="./assets/js/iconify.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+  <!-- country-select.js CSS and JS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.0.1/css/countrySelect.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.0.1/js/countrySelect.min.js"></script>
+  <!-- custon js -->
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    const toggleSwitches = document.querySelectorAll('.toggle-switch-input');
+    const labels = document.querySelectorAll('.toggle-switch-label');
+
+    toggleSwitches.forEach((toggleSwitch, index) => {
+      toggleSwitch.addEventListener('change', function () {
+        const label = labels[index];
+        label.textContent = this.checked ? 'on' : 'off';
+        label.classList.toggle('on', this.checked);
+      });
+    });
+  </script>
+
+  <script>
+    const copyContainers = document.querySelectorAll('.copy');
+
+    copyContainers.forEach(copyContainer => {
+      const copyText = copyContainer.previousElementSibling.textContent.trim();
+      const copyIcon = copyContainer.querySelector('.copy-icon');
+      const checkIcon = copyContainer.querySelector('.check-icon');
+      const copiedMessage = copyContainer.querySelector('.copied-message');
+
+      copyIcon.addEventListener('click', () => {
+        // Create a temporary textarea to copy the text
+        const tempTextArea = document.createElement('textarea');
+        tempTextArea.value = copyText;
+        document.body.appendChild(tempTextArea);
+        tempTextArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextArea);
+
+        // Hide copy icon and show check icon
+        copyIcon.style.display = 'none';
+        checkIcon.style.display = 'inline';
+
+        // Show "Copied" message for 5 seconds
+        copiedMessage.style.display = 'inline';
+
+        setTimeout(() => {
+          // Show copy icon and hide check icon
+          copyIcon.style.display = 'inline';
+          checkIcon.style.display = 'none';
+
+          // Hide "Copied" message
+          copiedMessage.style.display = 'none';
+        }, 5000);
+      });
+    });
+  </script>
+
+  <script>
+    const clickButton = document.querySelector('.confirm-payment-button');
+    const processingSection = document.querySelector('.processing');
+    const successSection = document.querySelector('.success-content');
+
+    clickButton.addEventListener('click', () => {
+      processingSection.style.display = 'block';
+
+      setTimeout(() => {
+        processingSection.style.display = 'none';
+        successSection.style.display = 'block';
+      }, 5000);
+    });
+  </script>
+
+  <script>
+    // Get the select elements
+    const creditguardSelect = document.getElementById('creditguard-select');
+    const tranzilaSelect = document.getElementById('tranzila-select');
+
+    // Get the span elements
+    const creditguardBasic = document.getElementById('creditguard-basic');
+    const creditguardAdvance = document.getElementById('creditguard-advance');
+    const creditguardPro = document.getElementById('creditguard-pro');
+    const tranzilaBasic = document.getElementById('tranzila-basic');
+    const tranzilaAdvance = document.getElementById('tranzila-advance');
+    const tranzilaPro = document.getElementById('tranzila-pro');
+
+    // Add event listeners to the select elements
+    creditguardSelect.addEventListener('change', handleSelectChange);
+    tranzilaSelect.addEventListener('change', handleSelectChange);
+
+    // Function to handle select change event
+    function handleSelectChange(event) {
+      const select = event.target;
+      const selectedOption = select.value;
+
+      // Determine which spans to show/hide based on the selected option
+      switch (select.id) {
+        case 'creditguard-select':
+          creditguardBasic.style.display = selectedOption === 'default' ? 'inline' : 'none';
+          creditguardAdvance.style.display = selectedOption === 'advance' ? 'inline' : 'none';
+          creditguardPro.style.display = selectedOption === 'pro' ? 'inline' : 'none';
+          break;
+        case 'tranzila-select':
+          tranzilaBasic.style.display = selectedOption === 'default' ? 'inline' : 'none';
+          tranzilaAdvance.style.display = selectedOption === 'advance' ? 'inline' : 'none';
+          tranzilaPro.style.display = selectedOption === 'pro' ? 'inline' : 'none';
+          break;
+        default:
+          break;
+      }
+    }
+
+  </script>
+
+  <script>
+    const showMoreButtons = document.querySelectorAll('.show-more-button');
+
+    showMoreButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const pluginCard = this.closest('.wp-plugins-card');
+        const pluginCardText = pluginCard.querySelector('.plugin-card-text');
+        pluginCardText.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- country select -->
+  <script>
+    $("#country").countrySelect({
+      defaultCountry: "il", // Israel as default
+      preferredCountries: ['il', 'us', 'bd', 'in'],
+      responsiveDropdown: true
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.billable-add-btn').on('click', function () {
+        $('.bilable-card').hide();
+        $('.add-billable-items').show();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.filter-open').on('click', function () {
+        $('.filter-open').hide();
+        $('.filter-close').show();
+        $('.filter-content').show();
+      });
+    });
+    $(document).ready(function () {
+      $('.filter-close').on('click', function () {
+        $('.filter-open').show();
+        $('.filter-close').hide();
+        $('.filter-content').hide();
+      });
+    });
+  </script>
+
+  <script>
+    $(function () {
+      // Set default values if needed
+      var personalCode = "+97276543210";
+      var officeCode = "+97236543210";
+
+      // Set values
+      $('#mobile').val(personalCode);
+      $('#officeMobile').val(officeCode);
+
+      // Common options
+      const telOptions = {
+        autoHideDialCode: true,
+        autoPlaceholder: "ON",
+        dropdownContainer: document.body,
+        formatOnDisplay: true,
+        initialCountry: "il", // Set default to Israel
+        placeholderNumberType: "MOBILE",
+        preferredCountries: ['il', 'us', 'gb', 'in'],
+        separateDialCode: true
+      };
+
+      // Initialize both inputs
+      $('#mobile').intlTelInput(telOptions);
+      $('#officeMobile').intlTelInput(telOptions);
+
+      // Button click handler
+      $('#btn-submit').on('click', function () {
+        const personalCode = $('#mobile').intlTelInput('getSelectedCountryData').dialCode;
+        const personalNumber = $('#mobile').val();
+
+        const officeCode = $('#officeMobile').intlTelInput('getSelectedCountryData').dialCode;
+        const officeNumber = $('#officeMobile').val();
+
+        // Output to DOM or console
+        document.getElementById("code").innerHTML = personalCode;
+        document.getElementById("mobile-number").innerHTML = personalNumber;
+        document.getElementById("office-code").innerHTML = officeCode;
+        document.getElementById("office-number").innerHTML = officeNumber;
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
