@@ -31772,7 +31772,7 @@ crm style
 .dashboard-dropdown::after {
   position: absolute;
   right: 12px;
-  top: 10px;
+  top: 5px;
   vertical-align: none !important;
   content: url(../images/icon/dropdown-icon.svg);
   border: none !important;
@@ -32822,6 +32822,7 @@ crm style
 }
 .customer-tbody ul li span.close {
   color: #E34545;
+  opacity: 1 !important;
 }
 .customer-tbody ul li span.pending {
   color: #FE8D00;
@@ -33029,13 +33030,15 @@ crm style
 .client-summary-tabs {
   border-bottom: 0;
   margin: 0px -15px;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   display: flex;
   align-items: flex-end;
   overflow-x: scroll;
   overflow-y: visible;
   min-height: 65px;
+  margin-top: -20px;
+  gap: 0;
 }
 .client-summary-tabs.order-summary-tabs {
   justify-content: flex-start;
@@ -33044,6 +33047,8 @@ crm style
   border: none;
   padding-bottom: 8px;
   position: relative;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .client-summary-tabs .tab-link.active {
   border: none;
@@ -33092,12 +33097,12 @@ crm style
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 
 .summary-card-header {
-  padding: 30px 30px 0px 30px;
+  padding: 20px 30px 0px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .summary-card-header span {
@@ -33246,7 +33251,7 @@ crm style
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 250%;
+  line-height: 170%;
   text-transform: uppercase;
   width: 100%;
 }
@@ -33262,6 +33267,33 @@ crm style
   height: 50px;
   width: 100%;
   padding: 5px 20px;
+}
+.client-input .date-fild {
+  position: relative;
+}
+.client-input .date-fild::after {
+  content: url(../images/icon/calander.svg);
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  z-index: 0;
+}
+.client-input .date-fild input {
+  padding-left: 50px;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+.client-input .date-fild input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
 }
 .client-input .country-select {
   width: 100%;
@@ -33353,7 +33385,7 @@ crm style
   line-height: normal;
   height: 50px;
   width: 270px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .custom-tel-input input {
@@ -33409,7 +33441,7 @@ crm style
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 25px 30px;
+  padding: 22px 30px;
 }
 .bilable-top h3 {
   color: #111;
@@ -33683,7 +33715,7 @@ crm style
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background: #F9F9F9;
-  margin-top: -30px;
+  margin-top: 0px;
 }
 
 .filter-top {
@@ -33692,6 +33724,7 @@ crm style
   justify-content: space-between;
   gap: 10px;
   padding: 5px 30px;
+  cursor: pointer;
 }
 .filter-top h4 {
   display: flex;
@@ -33724,7 +33757,7 @@ crm style
   font-family: Inter;
   font-size: 12px;
   font-weight: 500;
-  line-height: 250%;
+  line-height: 170%;
   text-transform: uppercase;
 }
 .filter-content .input-fild {
@@ -33733,7 +33766,7 @@ crm style
   background: #FFF;
   height: 50px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
 }
 .filter-content .input-fild.date-fild::after {
@@ -33790,7 +33823,7 @@ crm style
   background: #FFF;
   height: 50px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 18order-table-card-toppx;
   position: relative;
 }
 .filter-content .input-select select {
@@ -33959,20 +33992,36 @@ crm style
     flex-direction: column;
     margin-bottom: 20px;
   }
+  .filter-content {
+    padding: 15px;
+  }
+  .summary-card-body {
+    padding: 15px;
+  }
+  .billable-table ul {
+    padding: 5px 4px;
+  }
   .clint-detail-card-left {
     height: auto;
     border: none;
     width: 100%;
     margin-bottom: -30px;
   }
+  .billable-bottom {
+    padding: 15px;
+  }
   .clint-detail-card-right {
     height: auto;
   }
   .bilable-top {
-    padding: 15px 20px;
+    padding: 15px;
+    row-gap: 10px;
   }
   .bilable-top h3 {
     font-size: 18px;
+  }
+  .order-table ul {
+    padding: 5px 5px;
   }
   .recure-eveery {
     flex-wrap: wrap;
@@ -34024,7 +34073,7 @@ crm style
 .order-detail-card {
   background: #F9F9F9;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 20px 30px;
+  padding: 20px 30px 30px 30px;
   border-radius: 16px;
 }
 .order-detail-card .order-summary-left {
@@ -34041,6 +34090,7 @@ crm style
   justify-content: flex-start;
   width: 100%;
   gap: 15px;
+  line-height: 250%;
 }
 .order-detail-card .order-summary-left ul li span {
   display: flex;
@@ -34061,6 +34111,14 @@ crm style
 
 .order-summary-right {
   max-width: 455px;
+  padding-top: 5px;
+}
+.order-summary-right h5 {
+  margin: 0;
+  font-family: Inter;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 500;
 }
 .order-summary-right .draft-btns {
   display: flex;
@@ -34160,12 +34218,13 @@ crm style
   margin: 30px 0px;
 }
 .order-item-card h4 {
-  padding: 15px 30px;
+  padding: 20px 30px;
   color: #111;
   font-family: Outfit;
   font-size: 24px;
   font-weight: 600;
   line-height: 150%;
+  margin: 0;
 }
 
 .order-item-table ul {
@@ -34194,7 +34253,7 @@ crm style
 }
 .order-item-table .table-head {
   background: rgba(0, 0, 0, 0.03);
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 .order-item-table .table-head ul {
   margin: -5px auto;
@@ -34203,6 +34262,8 @@ crm style
   font-size: 13px;
   text-transform: uppercase;
   color: #444;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .order-item-table .table-body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -34298,15 +34359,17 @@ crm style
   margin: 30px 0px;
 }
 .tx-table-card h4 {
-  padding: 15px 30px;
+  padding: 20px 30px;
   color: #111;
   font-family: Outfit;
   font-size: 24px;
   font-weight: 600;
   line-height: 150%;
+  margin: 0;
 }
 .tx-table-card .tx-table .table-head {
   background: rgba(0, 0, 0, 0.03);
+  padding: 4px 20px;
 }
 .tx-table-card .tx-table ul {
   padding: 5px 20px;
@@ -34354,7 +34417,7 @@ crm style
 .payment-card {
   background-color: #F9F9F9;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 30px;
+  padding: 25px 30px 30px 30px;
   border-radius: 16px;
 }
 .payment-card form .form-content {
@@ -34386,6 +34449,69 @@ crm style
   justify-content: center;
 }
 
+.mt--10 {
+  margin-top: -10px !important;
+}
+
+.mt--15 {
+  margin-top: -15px !important;
+}
+
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  gap: 8px;
+  position: relative;
+  margin-top: 3px;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  text-transform: none !important;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom box */
+.custom-checkbox .checkmark {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  position: relative;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease;
+  top: -5px;
+  left: 0;
+}
+.custom-checkbox .checkmark.top-2 {
+  top: 2px;
+}
+.custom-checkbox .checkmark.top-0 {
+  top: 0px;
+}
+
+/* When checked, show tick image */
+.custom-checkbox input[type=checkbox]:checked + .checkmark {
+  background-image: url("../images/icon/check-icon.svg");
+  background-position: center center;
+  background-size: contain;
+  background-color: #35B7F3;
+  border-color: #35B7F3;
+}
+
 .order-form-input.max-w-420 {
   max-width: 420px;
   width: 100%;
@@ -34395,7 +34521,7 @@ crm style
   font-family: Inter;
   font-size: 12px;
   font-weight: 500;
-  line-height: 250%;
+  line-height: 170%;
   text-transform: uppercase;
   display: flex;
   align-items: flex-end;
@@ -34422,9 +34548,33 @@ crm style
   padding: 5px 15px;
   background-color: transparent;
 }
+.order-form-input .input-fild.date-fild::after {
+  content: url(../images/icon/calander.svg);
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  z-index: 0;
+}
+.order-form-input .input-fild.date-fild input {
+  padding-left: 50px;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+.order-form-input .input-fild.date-fild input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
 .order-form-input .input-checkbox {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   height: 50px;
   gap: 12px;
@@ -34521,7 +34671,7 @@ crm style
   color: #444;
   font-size: 12px;
   font-weight: 500;
-  line-height: 250%;
+  line-height: 170%;
   text-transform: uppercase;
 }
 .credit-from .input-and-btn {
@@ -34559,7 +34709,7 @@ crm style
   font-family: Inter;
   font-size: 12px;
   font-weight: 500;
-  line-height: 250%;
+  line-height: 170%;
   text-transform: uppercase;
   width: 100%;
 }
@@ -34571,6 +34721,7 @@ crm style
   background: #FFF;
   outline: none;
   padding: 10px 15px;
+  resize: vertical;
 }
 .note-card button {
   margin-top: 10px !important;
@@ -34605,14 +34756,51 @@ crm style
   gap: 10px;
 }
 
+.scroll-x-full {
+  overflow-x: scroll;
+}
+.scroll-x-full::-webkit-scrollbar {
+  height: 10px;
+}
+.scroll-x-full::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.scroll-x-full::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.scroll-x-full::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media only screen and (max-width: 1200px) {
   .payment-card form button {
     margin-top: 20px !important;
   }
 }
 @media only screen and (max-width: 991px) {
+  .order-summary-right {
+    margin-top: 15px;
+  }
+  .scroll-x::-webkit-scrollbar {
+    height: 10px;
+  }
+  .scroll-x::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  .scroll-x::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  .scroll-x::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
   .tx-table {
     overflow-x: scroll;
+    scrollbar-color: #888 #f1f1f1;
+    scrollbar-width: thin;
   }
   .tx-table ul {
     min-width: 800px;
@@ -34622,8 +34810,42 @@ crm style
   .order-item-table {
     overflow-x: scroll;
   }
+  .order-item-table .table-head {
+    padding: 8px 25px 8px 5px !important;
+  }
   .order-item-table form {
     min-width: 600px;
+  }
+  .order-table-card-top {
+    padding: 15px 15px 10px 15px;
+  }
+  .client-summary-tabs .tab-link a {
+    padding-bottom: 5px;
+  }
+  .summary-card-header {
+    padding: 15px 15px 0px 15px;
+  }
+  .client-summary-tabs {
+    margin: 0px -15px 0px 0px;
+  }
+  .client-summary-tabs li {
+    margin-left: -10px;
+  }
+  .payment-card {
+    padding: 12px 15px;
+  }
+  .order-detail-card {
+    padding: 12px 15px;
+  }
+  .order-item-card h4,
+  .tx-table-card h4 {
+    padding: 12px 15px;
+  }
+  .order-table-btns {
+    padding: 0px 15px 15px 15px;
+  }
+  .tx-table-card .tx-table ul {
+    padding: 4px 10px !important;
   }
   .card-header-right {
     justify-content: flex-start;
@@ -34712,7 +34934,7 @@ crm style
   width: 500px;
 }
 .add-customer-drawer .offcanvas-header {
-  padding: 40px 30px 35px 30px;
+  padding: 20px 30px 20px 30px;
 }
 .add-customer-drawer .offcanvas-header .note-close-btn {
   position: absolute;
@@ -34743,7 +34965,7 @@ crm style
   padding-bottom: 150px;
 }
 .add-customer-drawer .crm-input {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 .add-customer-drawer .crm-input label {
   color: #444;
@@ -34898,6 +35120,13 @@ crm style
 
 .customer-table-footer {
   padding: 20px 30px 0px 30px;
+}
+.customer-table-footer .pagination {
+  margin: 0;
+}
+.customer-table-footer .pagination ul {
+  padding: 0;
+  margin: 0;
 }
 
 .crm-checkbox {

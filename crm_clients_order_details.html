@@ -265,7 +265,7 @@
   <!-- side-menu End -->
 
   <!-- user-body-section start -->
-  <section class="user-body-section active uig-pt-115">
+  <section class="user-body-section active uig-pt-100">
     <div class="user-body-container user-body-container-2">
       <div class="top">
         <a href="./customer.html" class="client-detail-back-icon">
@@ -289,18 +289,19 @@
         <div class="summary-card-header">
           <div class="summary-card-header-top">
             <div class="card-header-left">
-            <span>Order</span>
-            <h3>#56932</h3>
-            <h5 class="info"><img src="./assets/images/icon/info-orange.svg" alt="icon"> This is a draft order. The client
-              is not able to see or access the order until it is published</h5>
+              <span>Order</span>
+              <h3>#56932</h3>
+              <h5 class="info"><img src="./assets/images/icon/info-orange.svg" alt="icon"> This is a draft order. The
+                client
+                is not able to see or access the order until it is published</h5>
+            </div>
+            <div class="card-header-right">
+              <button><img src="./assets/images/icon/view.svg" alt="icon">View as Client</button>
+              <button><img src="./assets/images/icon/print.svg" alt="icon">Print</button>
+              <button><img src="./assets/images/icon/download-icon.svg" alt="icon">Download</button>
+            </div>
           </div>
-          <div class="card-header-right">
-            <button><img src="./assets/images/icon/view.svg" alt="icon">View as Client</button>
-            <button><img src="./assets/images/icon/print.svg" alt="icon">Print</button>
-            <button><img src="./assets/images/icon/download-icon.svg" alt="icon">Download</button>
-          </div>
-          </div>
-          <ul class="nav nav-tabs client-summary-tabs order-summary-tabs">
+          <ul class="nav nav-tabs client-summary-tabs order-summary-tabs scroll-x-full">
             <li class="tab-link min-w-max-content active"><a data-toggle="tab" href="#summary">Summary</a></li>
             <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#addPayment">Add Payment</a></li>
             <li class="tab-link min-w-max-content"><a data-toggle="tab" href="#options">Options</a></li>
@@ -364,7 +365,7 @@
                       <div class="col-md-6">
                         <div class="order-form-input">
                           <label for="">Date</label>
-                          <div class="input-fild date">
+                          <div class="input-fild date-fild">
                             <input type="date">
                           </div>
                         </div>
@@ -408,8 +409,11 @@
                         <div class="order-form-input">
                           <label for="">Send Email</label>
                           <div class="input-checkbox">
-                            <input type="checkbox">
-                            <span>Tick to Send Confirmation Email</span>
+                            <label class="custom-checkbox">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                              Tick to Send Confirmation Email
+                            </label>
                           </div>
                         </div>
                       </div>
@@ -427,7 +431,7 @@
                       <div class="col-md-6">
                         <div class="order-form-input">
                           <label for="">Order Date</label>
-                          <div class="input-fild date">
+                          <div class="input-fild date-fild">
                             <input type="date">
                           </div>
                         </div>
@@ -435,7 +439,7 @@
                       <div class="col-md-6">
                         <div class="order-form-input">
                           <label for="">Due Date</label>
-                          <div class="input-fild date">
+                          <div class="input-fild date-fild">
                             <input type="date">
                           </div>
                         </div>
@@ -555,16 +559,22 @@
 
                     <div class="order-form-input">
                       <label for="">Reverse Payment</label>
-                      <div class="input-checkbox refund-checkbox">
-                        <input type="checkbox">
-                        <span>Undo automated actions triggered by this transaction - where possible</span>
+                      <div class="input-checkbox refund-checkbox mt--15">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                          Undo automated actions triggered by this transaction - where possible
+                        </label>
                       </div>
                     </div>
                     <div class="order-form-input">
                       <label for="">Send email</label>
-                      <div class="input-checkbox refund-checkbox">
-                        <input type="checkbox">
-                        <span>Tick to Send Confirmation Email</span>
+                      <div class="input-checkbox refund-checkbox mt--15">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                          Tick to Send Confirmation Email
+                        </label>
                       </div>
                     </div>
 
@@ -590,7 +600,7 @@
 
           <div class="order-item-card">
             <h4>Order Items</h4>
-            <div class="order-item-table">
+            <div class="order-item-table scroll-x">
               <form action="" class="">
                 <div class="table-head">
                   <ul>
@@ -603,7 +613,12 @@
                   <ul>
                     <li><input type="text"></li>
                     <li><input type="text"></li>
-                    <li><input type="checkbox"></li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
                   </ul>
                 </div>
                 <div class="table-body">
@@ -660,9 +675,14 @@
 
           <div class="tx-table-card">
             <h4>Transactions</h4>
-            <div class="tx-table">
+            <div class="tx-table scroll-x">
               <ul class="table-head">
-                <li class="uppercase"><input type="checkbox"> <span>Date</span></li>
+                <li class="uppercase">
+                  <label class="custom-checkbox mt-3">
+                    <input type="checkbox" />
+                    <span class="checkmark top-2"></span>
+                  </label> <span>Date</span>
+                </li>
                 <li class="uppercase">Payment Method</li>
                 <li class="uppercase">Transaction ID</li>
                 <li class="uppercase">Amount</li>
@@ -670,7 +690,10 @@
                 <li class="uppercase">Actions</li>
               </ul>
               <ul class="table-body">
-                <li><input type="checkbox"> <span>19/02/2025</span></li>
+                <li><label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark top-2"></span>
+                  </label> <span>19/02/2025</span></li>
                 <li>Bank Transfer</li>
                 <li>#25632555</li>
                 <li>₪369.00</li>
@@ -683,7 +706,10 @@
                 </li>
               </ul>
               <ul class="table-body">
-                <li><input type="checkbox"> <span>19/02/2025</span></li>
+                <li><label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark top-2"></span>
+                  </label> <span>19/02/2025</span></li>
                 <li>Bank Transfer</li>
                 <li>#85223336</li>
                 <li>₪896.00</li>

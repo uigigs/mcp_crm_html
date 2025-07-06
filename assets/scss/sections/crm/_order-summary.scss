@@ -16,14 +16,15 @@
         margin: 0;
     }
 }
-.min-w-max-content{
+
+.min-w-max-content {
     min-width: max-content;
 }
 
 .order-detail-card {
     background: #F9F9F9;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    padding: 20px 30px;
+    padding: 20px 30px 30px 30px;
     border-radius: 16px;
 
     .order-summary-left {
@@ -40,6 +41,7 @@
                 justify-content: flex-start;
                 width: 100%;
                 gap: 15px;
+                line-height: 250%;
 
                 span {
                     display: flex;
@@ -66,6 +68,15 @@
 
 .order-summary-right {
     max-width: 455px;
+    padding-top: 5px;
+
+    h5 {
+        margin: 0;
+        font-family: Inter;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 500;
+    }
 
     .draft-btns {
         display: flex;
@@ -175,12 +186,13 @@
     margin: 30px 0px;
 
     h4 {
-        padding: 15px 30px;
+        padding: 20px 30px;
         color: #111;
         font-family: Outfit;
         font-size: 24px;
         font-weight: 600;
         line-height: 150%;
+        margin: 0;
     }
 }
 
@@ -216,7 +228,7 @@
 
     .table-head {
         background: rgba(0, 0, 0, 0.03);
-        padding: 5px 20px;
+        padding: 10px 20px;
 
         ul {
             margin: -5px auto;
@@ -225,6 +237,8 @@
                 font-size: 13px;
                 text-transform: uppercase;
                 color: #444;
+                padding-top: 0;
+                padding-bottom: 0;
             }
         }
     }
@@ -342,17 +356,19 @@
     margin: 30px 0px;
 
     h4 {
-        padding: 15px 30px;
+        padding: 20px 30px;
         color: #111;
         font-family: Outfit;
         font-size: 24px;
         font-weight: 600;
         line-height: 150%;
+        margin: 0;
     }
 
     .tx-table {
         .table-head {
             background: rgba(0, 0, 0, 0.03);
+            padding: 4px 20px;
         }
 
         ul {
@@ -424,7 +440,7 @@
 .payment-card {
     background-color: #F9F9F9;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    padding: 30px;
+    padding: 25px 30px 30px 30px;
     border-radius: 16px;
 
     form {
@@ -447,7 +463,8 @@
             align-items: center;
             justify-content: flex-end;
             margin-top: -70px;
-            &.refund-btn{
+
+            &.refund-btn {
                 background: none;
                 border-radius: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.12);
@@ -461,23 +478,93 @@
     }
 }
 
+.mt--10 {
+    margin-top: -10px !important;
+}
+
+.mt--15 {
+    margin-top: -15px !important;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    gap: 8px;
+    position: relative;
+    margin-top: 3px;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    text-transform: none !important;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom box */
+.custom-checkbox .checkmark {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    position: relative;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease;
+    top: -5px;
+    left: 0;
+
+    &.top-2 {
+        top: 2px;
+    }
+    &.top-0 {
+        top: 0px;
+    }
+}
+
+/* When checked, show tick image */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-image: url('../images/icon/check-icon.svg');
+    background-position: center center;
+    background-size: contain;
+    background-color: #35B7F3;
+    border-color: #35B7F3;
+}
+
+
+
+
+
+
+
 
 .order-form-input {
-    &.max-w-420{
+    &.max-w-420 {
         max-width: 420px;
         width: 100%;
     }
+
     label {
         color: #444;
         font-family: Inter;
         font-size: 12px;
         font-weight: 500;
-        line-height: 250%;
+        line-height: 170%;
         text-transform: uppercase;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        span{
+
+        span {
             font-size: 12px;
             text-transform: none;
 
@@ -502,11 +589,41 @@
             background-color: transparent;
         }
 
+        &.date-fild {
+            &::after {
+                content: url(../images/icon/calander.svg);
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                z-index: 0;
+            }
+
+            input {
+                padding-left: 50px;
+                position: relative;
+                z-index: 1;
+                background: transparent;
+
+                &[type="date"]::-webkit-calendar-picker-indicator {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: auto;
+                    height: auto;
+                    color: transparent;
+                    background: transparent;
+                }
+
+            }
+        }
+
     }
 
     .input-checkbox {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         height: 50px;
         gap: 12px;
@@ -617,7 +734,7 @@
         color: #444;
         font-size: 12px;
         font-weight: 500;
-        line-height: 250%;
+        line-height: 170%;
         text-transform: uppercase;
     }
 
@@ -626,6 +743,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 15px;
+
         button {
             color: #444;
             border-radius: 10px;
@@ -660,7 +778,7 @@
             font-family: Inter;
             font-size: 12px;
             font-weight: 500;
-            line-height: 250%;
+            line-height: 170%;
             text-transform: uppercase;
             width: 100%;
         }
@@ -673,13 +791,16 @@
             background: #FFF;
             outline: none;
             padding: 10px 15px;
+            resize: vertical;
         }
     }
-    button{
+
+    button {
         margin-top: 10px !important;
     }
 }
-.summary-card-header-top{
+
+.summary-card-header-top {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -687,13 +808,15 @@
     flex-wrap: wrap;
 
 }
-.card-header-right{
+
+.card-header-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
     flex-wrap: wrap;
-    button{
+
+    button {
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #FFF;
@@ -707,84 +830,205 @@
     }
 }
 
+.scroll-x-full {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .payment-card {
         form {
-            button{
+            button {
                 margin-top: 20px !important;
             }
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
-    .tx-table{
+    .order-summary-right {
+        margin-top: 15px;
+    }
+
+    .scroll-x {
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+
+    .tx-table {
         overflow-x: scroll;
-        ul{
+        scrollbar-color: #888 #f1f1f1;
+        scrollbar-width: thin;
+
+
+        ul {
             min-width: 800px;
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .order-item-table{
+    .order-item-table {
         overflow-x: scroll;
-        form{
+
+        .table-head {
+            padding: 8px 25px 8px 5px !important;
+        }
+
+        form {
             min-width: 600px;
         }
     }
-    .card-header-right{
+    .order-table-card-top{
+        padding: 15px 15px 10px 15px;
+    }
+    .client-summary-tabs {
+        .tab-link {
+            a {
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    .summary-card-header {
+        padding: 15px 15px 0px 15px;
+    }
+
+    .client-summary-tabs {
+        margin: 0px -15px 0px 0px;
+
+        li {
+            margin-left: -10px;
+        }
+    }
+
+    .payment-card {
+        padding: 12px 15px;
+    }
+
+    .order-detail-card {
+        padding: 12px 15px;
+    }
+
+    .order-item-card,
+    .tx-table-card {
+        h4 {
+            padding: 12px 15px;
+        }
+    }
+
+    .order-table-btns {
+        padding: 0px 15px 15px 15px;
+    }
+
+    .tx-table-card {
+        .tx-table {
+            ul {
+                padding: 4px 10px !important;
+            }
+        }
+    }
+
+    .card-header-right {
         justify-content: flex-start;
     }
 }
+
 @media only screen and (max-width: 650px) {
     .order-summary-right {
-        .draft-btns{
+        .draft-btns {
             flex-wrap: wrap;
-            button{
+
+            button {
                 width: 100%;
             }
         }
     }
-    .draft-content{
+
+    .draft-content {
         flex-wrap: wrap;
-        .draft-dropdown{
+
+        .draft-dropdown {
             max-width: 100%;
         }
-        button{
+
+        button {
             width: 100%;
         }
     }
-    .order-publish-btns{
+
+    .order-publish-btns {
         flex-wrap: wrap;
         margin-top: 20px;
-        button{
-          width: 100%;
-        }
-    }
-    .credit-from{
-        flex-wrap: wrap;
-        .left{
+
+        button {
             width: 100%;
         }
-        .right{
+    }
+
+    .credit-from {
+        flex-wrap: wrap;
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
             width: 100%;
         }
     }
 }
+
 @media only screen and (max-width: 480px) {
-    .order-table-btns{
+    .order-table-btns {
         flex-wrap: wrap;
         gap: 15px;
-        button{
+
+        button {
             width: 100%;
 
         }
     }
+
     .payment-card {
         form {
-            button{
+            button {
                 width: 100%;
                 justify-content: center;
-                &.refund-btn{
+
+                &.refund-btn {
                     max-width: 100%;
                 }
             }

@@ -166,14 +166,17 @@
 .client-summary-tabs {
     border-bottom: 0;
     margin: 0px -15px;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     display: flex;
     align-items: flex-end;
     overflow-x: scroll;
     overflow-y: visible;
     min-height: 65px;
-    &.order-summary-tabs{
+    margin-top: -20px;
+    gap: 0;
+
+    &.order-summary-tabs {
         justify-content: flex-start;
     }
 
@@ -181,6 +184,7 @@
         border: none;
         padding-bottom: 8px;
         position: relative;
+        min-width: max-content;
 
         &.active {
             border: none;
@@ -236,12 +240,12 @@
     border-radius: 15px;
     background: #FFF;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 
 .summary-card-header {
-    padding: 30px 30px 0px 30px;
+    padding: 20px 30px 0px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 
     span {
@@ -409,7 +413,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: 250%;
+        line-height: 170%;
         text-transform: uppercase;
         width: 100%;
     }
@@ -426,6 +430,37 @@
         height: 50px;
         width: 100%;
         padding: 5px 20px;
+    }
+
+    .date-fild {
+        position: relative;
+        &::after {
+            content: url(../images/icon/calander.svg);
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            z-index: 0;
+        }
+
+        input {
+            padding-left: 50px;
+            position: relative;
+            z-index: 1;
+            background: transparent;
+
+            &[type="date"]::-webkit-calendar-picker-indicator {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: auto;
+                height: auto;
+                color: transparent;
+                background: transparent;
+            }
+
+        }
     }
 
     .country-select {
@@ -531,7 +566,7 @@
     line-height: normal;
     height: 50px;
     width: 270px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .custom-tel-input {
@@ -600,7 +635,7 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 25px 30px;
+    padding: 22px 30px;
 
     h3 {
         color: #111;
@@ -910,7 +945,7 @@
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     background: #F9F9F9;
-    margin-top: -30px;
+    margin-top: 0px;
 }
 
 .filter-top {
@@ -919,6 +954,7 @@
     justify-content: space-between;
     gap: 10px;
     padding: 5px 30px;
+    cursor: pointer;
 
     h4 {
         display: flex;
@@ -955,7 +991,7 @@
         font-family: Inter;
         font-size: 12px;
         font-weight: 500;
-        line-height: 250%;
+        line-height: 170%;
         text-transform: uppercase;
     }
 
@@ -965,7 +1001,7 @@
         background: #FFF;
         height: 50px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         position: relative;
 
         &.date-fild {
@@ -1032,7 +1068,7 @@
         background: #FFF;
         height: 50px;
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 18order-table-card-toppx;
         position: relative;
 
         select {
@@ -1206,6 +1242,24 @@
     .billable-table {
         overflow-x: scroll;
 
+        // &::-webkit-scrollbar {
+        //     height: 10px;
+        // }
+
+        // &::-webkit-scrollbar-track {
+        //     background: #f1f1f1;
+        //     border-radius: 10px;
+        // }
+
+        // &::-webkit-scrollbar-thumb {
+        //     background: #888;
+        //     border-radius: 10px;
+        // }
+
+        // &::-webkit-scrollbar-thumb:hover {
+        //     background: #555;
+        // }
+
         ul {
             min-width: 850px;
         }
@@ -1234,6 +1288,18 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
+    .filter-content{
+        padding: 15px;
+    }
+    .summary-card-body{
+        padding: 15px;
+    }
+
+    .billable-table {
+        ul {
+            padding: 5px 4px;
+        }
+    }
 
     .clint-detail-card-left {
         height: auto;
@@ -1242,15 +1308,26 @@
         margin-bottom: -30px;
     }
 
+    .billable-bottom {
+        padding: 15px;
+    }
+
     .clint-detail-card-right {
         height: auto;
     }
 
     .bilable-top {
-        padding: 15px 20px;
+        padding: 15px;
+        row-gap: 10px;
 
         h3 {
             font-size: 18px;
+        }
+    }
+
+    .order-table {
+        ul{
+            padding: 5px 5px;
         }
     }
 
